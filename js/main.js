@@ -167,9 +167,16 @@
       setTimeout(() => { if (!lb.classList.contains('open')) lbImg.src = ''; }, 350);
     }
 
-    // Delegated click handler — catches img clicks even if loaded later
+    // Delegated click handler. Clicks may land on the image directly OR on a
+    // gradient `::after` overlay whose target is the parent container — so we
+    // also check well-known containers for an image inside.
+    const CONTAINER_SELECTOR = '.journey-card, .mosaic-cell, .chapter-image-wrap, .strip, .trip-card, .hotel-thumb';
     document.addEventListener('click', (e) => {
-      const img = e.target.closest && e.target.closest('img[data-fade]');
+      let img = e.target && e.target.closest && e.target.closest('img[data-fade]');
+      if (!img) {
+        const container = e.target && e.target.closest && e.target.closest(CONTAINER_SELECTOR);
+        if (container) img = container.querySelector('img[data-fade]');
+      }
       if (!img) return;
       if (img.classList.contains('hero-photo')) return;
       if (img.classList.contains('verdict-photo')) return;
