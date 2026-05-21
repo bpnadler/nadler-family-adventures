@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chile 2027 — Nadler Family Adventures</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .hero-animate { opacity: 0; transform: translateY(28px); transition: opacity 0.9s cubic-bezier(0.16,1,0.3,1), transform 0.9s cubic-bezier(0.16,1,0.3,1); }
+    .vs-strip { padding: 4rem 1.5rem; text-align: center; background: linear-gradient(180deg, #0a0d12 0%, #060810 100%); }
+    .vs-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; max-width: 900px; margin: 2.5rem auto 0; }
+    .vs-card { padding: 1.5rem 1.25rem; background: rgba(246,241,230,0.03); border: 1px solid rgba(246,241,230,0.08); border-radius: 12px; }
+    .vs-card .vs-name { font-family: var(--font-display); font-style: italic; font-size: 1.1rem; color: var(--cream-dim); margin-bottom: 0.4rem; }
+    .vs-card .vs-trait { font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; color: var(--gold); }
+    .vs-card.this-one { background: rgba(212,175,55,0.07); border-color: rgba(212,175,55,0.3); }
+    .vs-card.this-one .vs-name { color: var(--cream); }
+    @media (max-width: 700px) { .vs-row { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <nav class="site-nav" role="navigation">
+    <span class="nav-brand">Nadler Family <em>Adventures</em></span>
+    <a href="../index.html" class="nav-back">All Trips</a>
+  </nav>
+
+  <header class="hero" role="banner">
+    <img class="hero-photo" data-fade src="../images/photos/atacama_1.jpg" alt="">
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow hero-animate">Chile</p>
+      <h1 class="hero-title hero-animate">The Most<em>Unique One</em></h1>
+      <p class="hero-subtitle hero-animate">A 10-night family adventure across sophisticated Santiago, quiet wine country, and the surreal Mars-like Atacama Desert.</p>
+      <div class="hero-meta hero-animate">
+        <div class="hero-meta-item"><span class="hero-meta-label">Dates</span><span class="hero-meta-value">April 2027</span></div>
+        <div class="hero-meta-item"><span class="hero-meta-label">Duration</span><span class="hero-meta-value">10 Nights</span></div>
+        <div class="hero-meta-item"><span class="hero-meta-label">Stops</span><span class="hero-meta-value">3 Chapters</span></div>
+        <div class="hero-meta-item"><span class="hero-meta-label">Style</span><span class="hero-meta-value">Dramatic · Cinematic</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true"><span>Scroll</span></div>
+  </header>
+
+  <section class="stats-strip">
+    <div class="stats-inner">
+      <div class="stat reveal"><span class="stat-num">10</span><span class="stat-label">Nights</span></div>
+      <div class="stat reveal reveal-d1"><span class="stat-num">3</span><span class="stat-label">Destinations</span></div>
+      <div class="stat reveal reveal-d2"><span class="stat-num">5</span><span class="stat-label">Nights in Atacama</span></div>
+      <div class="stat reveal reveal-d3"><span class="stat-num">★★★</span><span class="stat-label">World Stargazing</span></div>
+      <div class="stat reveal reveal-d4"><span class="stat-num">∞</span><span class="stat-label">Mars Landscapes</span></div>
+    </div>
+  </section>
+
+  <section class="vs-strip">
+    <p class="eyebrow reveal" style="display:inline-block;margin-bottom:1rem;">Where This Fits</p>
+    <h2 class="display-md reveal reveal-d1" style="max-width:680px;margin:0 auto;">If Europe is <em class="gold-italic">elegant</em>, Chile is <em class="gold-italic">cinematic.</em></h2>
+    <div class="vs-row reveal reveal-d2">
+      <div class="vs-card"><p class="vs-name">Switzerland &amp; Italy</p><p class="vs-trait">Elegant</p></div>
+      <div class="vs-card"><p class="vs-name">Scotland</p><p class="vs-trait">Atmospheric</p></div>
+      <div class="vs-card this-one"><p class="vs-name">Chile</p><p class="vs-trait">Dramatic</p></div>
+    </div>
+    <p class="reveal reveal-d3" style="margin-top:2rem;font-size:1rem;color:var(--cream-dim);max-width:560px;margin-inline:auto;">Adventurous. Surreal. Premium without being flashy. Genuinely different from anywhere you'd think to go in Europe.</p>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">The Journey</span>
+        <h2 class="display-lg">10 Nights. <em class="gold-italic">Three Chapters.</em></h2>
+        <p class="lead">Don't overcomplicate Chile. The winning formula is Santiago → Wine Country → Atacama. Simple, well-paced, unforgettable.</p>
+      </div>
+
+      <div class="journey">
+        <div class="journey-card reveal">
+          <img class="journey-photo" data-fade src="../images/photos/santiago_1.jpg" alt="">
+          <div class="journey-text">
+            <span class="journey-day">Days 1 – 4</span>
+            <div>
+              <p class="journey-place">Santiago</p>
+              <p class="journey-mood">Sophisticated city start</p>
+              <span class="journey-nights">3 nights</span>
+            </div>
+          </div>
+        </div>
+        <div class="journey-card reveal reveal-d1">
+          <img class="journey-photo" data-fade src="../images/photos/vineyard_1.jpg" alt="">
+          <div class="journey-text">
+            <span class="journey-day">Days 4 – 6</span>
+            <div>
+              <p class="journey-place">Wine Country</p>
+              <p class="journey-mood">The vacation exhale</p>
+              <span class="journey-nights">2 nights</span>
+            </div>
+          </div>
+        </div>
+        <div class="journey-card reveal reveal-d2">
+          <img class="journey-photo" data-fade src="../images/photos/atacama_2.jpg" alt="">
+          <div class="journey-text">
+            <span class="journey-day">Days 6 – 11</span>
+            <div>
+              <p class="journey-place">Atacama Desert</p>
+              <p class="journey-mood">The "wow" segment</p>
+              <span class="journey-nights">5 nights</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pull-quote">
+    <div class="pull-quote-mark">"</div>
+    <blockquote class="reveal">
+      The Atacama is one of the <strong>most extraordinary landscapes on Earth.</strong>
+    </blockquote>
+  </section>
+
+  <section class="chapter">
+    <div class="chapter-grid">
+      <div class="chapter-image-wrap reveal">
+        <img data-fade src="../images/photos/santiago_2.jpg" alt="Santiago">
+        <span class="chapter-image-tag">Lastarria</span>
+      </div>
+      <div class="chapter-text reveal reveal-d1">
+        <p class="chapter-day">Days 1 – 4</p>
+        <h2 class="chapter-title">Santiago</h2>
+        <p class="chapter-mood">Andes-Backed · Sophisticated · Surprising</p>
+        <p class="chapter-desc">Santiago surprises everyone. Modern restaurants, cool neighborhoods, mountains in the background — and a relaxed South American energy that makes the perfect easy landing.</p>
+
+        <div class="hotels">
+          <div class="hotel">
+            <div class="hotel-thumb"><img data-fade src="../images/hotels/singular_santiago.jpg" alt=""></div>
+            <a class="hotel-body" href="https://www.thesingular.com/en/santiago/" target="_blank" rel="noopener noreferrer">
+              <p class="hotel-name">The Singular Santiago <span class="hotel-tag">Best Overall</span> <span class="hotel-ext" aria-hidden="true">↗</span></p>
+              <p class="hotel-desc">Stylish boutique luxury in Lastarria.</p>
+            </a>
+          </div>
+          <div class="hotel">
+            <div class="hotel-thumb"><img data-fade src="../images/hotels/mandarin_santiago.jpg" alt=""></div>
+            <a class="hotel-body" href="https://www.mandarinoriental.com/en/santiago/las-condes" target="_blank" rel="noopener noreferrer">
+              <p class="hotel-name">Mandarin Oriental Santiago <span class="hotel-tag">Polished</span> <span class="hotel-ext" aria-hidden="true">↗</span></p>
+              <p class="hotel-desc">Resort feel with serious polish.</p>
+            </a>
+          </div>
+          <div class="hotel">
+            <div class="hotel-thumb"><img data-fade src="../images/hotels/hotel_magnolia_2.jpg" alt=""></div>
+            <a class="hotel-body" href="https://www.hotelmagnolia.cl/en/" target="_blank" rel="noopener noreferrer">
+              <p class="hotel-name">Hotel Magnolia <span class="hotel-tag">Boutique</span> <span class="hotel-ext" aria-hidden="true">↗</span></p>
+              <p class="hotel-desc">Beautiful smaller boutique option.</p>
+            </a>
+          </div>
+        </div>
+
+        <ul class="bullets" style="margin-top:1.5rem;">
+          <li><div><strong>Lastarria Neighborhood</strong><span>Walk it on arrival day — cobblestones, cafés, easy.</span></div></li>
+          <li><div><strong>Plaza de Armas &amp; Sky Costanera</strong><span>Old town + the tallest viewpoint in South America.</span></div></li>
+          <li><div><strong><a class="ext-link" href="https://www.parquemet.cl/en/" target="_blank" rel="noopener noreferrer">Funicular up San Cristóbal</a></strong><span>Optional. Best city panorama.</span></div></li>
+          <li><div><strong>Guided Andes Day Trip</strong><span>Mountain viewpoints, horseback, hot springs. Sets the visual tone of the whole trip.</span></div></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mosaic">
+      <div class="mosaic-cell m-wide reveal">
+        <img data-fade src="../images/photos/andes_1.jpg" alt="">
+        <div class="mosaic-label"><small>Day Trip</small>The Andes</div>
+      </div>
+      <div class="mosaic-cell m-sml reveal reveal-d1">
+        <img data-fade src="../images/photos/santiago_3.jpg" alt="">
+        <div class="mosaic-label"><small>Skyline</small>Santiago</div>
+      </div>
+      <div class="mosaic-cell m-sml reveal reveal-d2">
+        <img data-fade src="../images/photos/santiago_4.jpg" alt="">
+        <div class="mosaic-label"><small>Streets</small>Lastarria</div>
+      </div>
+      <div class="mosaic-cell m-md reveal reveal-d3">
+        <img data-fade src="../images/photos/andes_2.jpg" alt="">
+        <div class="mosaic-label"><small>Mountains</small>Andes Views</div>
+      </div>
+      <div class="mosaic-cell m-md reveal reveal-d4">
+        <img data-fade src="../images/photos/santiago_5.jpg" alt="">
+        <div class="mosaic-label"><small>Architecture</small>Old Santiago</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip">
+    <img data-fade src="../images/photos/vineyard_2.jpg" alt="">
+    <div class="strip-overlay">
+      <p class="strip-eyebrow">Days 4 – 6</p>
+      <h3 class="strip-title">Wine <em>Country</em></h3>
+    </div>
+  </div>
+
+  <section class="chapter chapter-reverse chapter-alt">
+    <div class="chapter-grid">
+      <div class="chapter-image-wrap reveal">
+        <img data-fade src="../images/photos/vineyard_3.jpg" alt="Chilean vineyard">
+        <span class="chapter-image-tag">Colchagua Valley</span>
+      </div>
+      <div class="chapter-text reveal reveal-d1">
+        <p class="chapter-day">Days 4 – 6</p>
+        <h2 class="chapter-title">The Exhale</h2>
+        <p class="chapter-mood">Slow Down · Eat Well · Float</p>
+        <p class="chapter-desc">Head to Colchagua or Casablanca Valley. Vineyard tours, bike rides, pool afternoons, long meals — this is the segment that resets everyone.</p>
+
+        <div class="hotels">
+          <div class="hotel">
+            <div class="hotel-thumb"><img data-fade src="../images/hotels/clos_apalta.jpg" alt=""></div>
+            <a class="hotel-body" href="https://www.closapalta.com/" target="_blank" rel="noopener noreferrer">
+              <p class="hotel-name">Clos Apalta Residence <span class="hotel-tag">Most Beautiful</span> <span class="hotel-ext" aria-hidden="true">↗</span></p>
+              <p class="hotel-desc">Intimate luxury inside one of Chile's great wineries.</p>
+            </a>
+          </div>
+          <div class="hotel">
+            <div class="hotel-thumb"><img data-fade src="../images/hotels/vik_chile.jpg" alt=""></div>
+            <a class="hotel-body" href="https://www.vikretreats.com/vik-chile" target="_blank" rel="noopener noreferrer">
+              <p class="hotel-name">Vik Chile <span class="hotel-tag">Iconic</span> <span class="hotel-ext" aria-hidden="true">↗</span></p>
+              <p class="hotel-desc">One of the coolest hotels in South America. Visually spectacular.</p>
+            </a>
+          </div>
+        </div>
+
+        <ul class="bullets" style="margin-top:1.5rem;">
+          <li><div><strong>Scenic Drive from Santiago</strong><span>The road there is part of the experience.</span></div></li>
+          <li><div><strong>Vineyard Tours &amp; Tastings</strong><span>Carménère and big Chilean reds at the source.</span></div></li>
+          <li><div><strong>Bike Through the Valleys</strong><span>Easy, beautiful, perfect family pace.</span></div></li>
+          <li><div><strong>Pool &amp; Spa Time</strong><span>Built-in downtime before the Atacama wow.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip">
+    <img data-fade src="../images/photos/valle_luna_1.jpg" alt="">
+    <div class="strip-overlay">
+      <p class="strip-eyebrow">Days 6 – 11</p>
+      <h3 class="strip-title">The <em>Atacama</em></h3>
+    </div>
+  </div>
+
+  <section class="chapter">
+    <div class="chapter-grid">
+      <div class="chapter-image-wrap reveal">
+        <img data-fade src="../images/photos/atacama_3.jpg" alt="Atacama Desert">
+        <span class="chapter-image-tag">San Pedro de Atacama</span>
+      </div>
+      <div class="chapter-text reveal reveal-d1">
+        <p class="chapter-day">Days 6 – 11</p>
+        <h2 class="chapter-title">The Atacama Desert</h2>
+        <p class="chapter-mood">Mars on Earth · Endless Skies · Pure WOW</p>
+        <p class="chapter-desc">Fly Santiago → Calama, then transfer to San Pedro. Five full nights to slowly absorb what is genuinely one of the most extraordinary landscapes on Earth — salt flats, volcanoes, flamingos, geothermal fields, and the world's best stargazing.</p>
+
+        <div class="hotels">
+          <div class="hotel">
+            <div class="hotel-thumb"><img data-fade src="../images/hotels/tierra_atacama.jpg" alt=""></div>
+            <a class="hotel-body" href="https://www.tierrahotels.com/atacama/" target="_blank" rel="noopener noreferrer">
+              <p class="hotel-name">Tierra Atacama <span class="hotel-tag">Family Favorite</span> <span class="hotel-ext" aria-hidden="true">↗</span></p>
+              <p class="hotel-desc">Excellent guided experiences. The best family pick.</p>
+            </a>
+          </div>
+          <div class="hotel">
+            <div class="hotel-thumb"><img data-fade src="../images/hotels/explora_atacama.jpg" alt=""></div>
+            <a class="hotel-body" href="https://www.explora.com/hotels-and-travesias/atacama-desert/" target="_blank" rel="noopener noreferrer">
+              <p class="hotel-name">Explora Atacama <span class="hotel-tag">Adventure-Luxe</span> <span class="hotel-ext" aria-hidden="true">↗</span></p>
+              <p class="hotel-desc">All-inclusive, expedition-style luxury.</p>
+            </a>
+          </div>
+          <div class="hotel">
+            <div class="hotel-thumb"><img data-fade src="../images/hotels/nayara_alto_atacama.jpg" alt=""></div>
+            <a class="hotel-body" href="https://www.nayaraaltoatacama.com/" target="_blank" rel="noopener noreferrer">
+              <p class="hotel-name">Nayara Alto Atacama <span class="hotel-tag">Relaxed</span> <span class="hotel-ext" aria-hidden="true">↗</span></p>
+              <p class="hotel-desc">Beautiful setting, more chilled vibe.</p>
+            </a>
+          </div>
+        </div>
+
+        <ul class="bullets" style="margin-top:1.5rem;">
+          <li><div><strong>Valle de la Luna</strong><span>Moon Valley at sunset — top-3 moment of the trip.</span></div></li>
+          <li><div><strong>Altiplanic Lagoons</strong><span>Turquoise lakes, flamingos, volcano scenery.</span></div></li>
+          <li><div><strong>El Tatio Geysers</strong><span>Pre-dawn drive into geothermal steam fields.</span></div></li>
+          <li><div><strong>World-Class Stargazing</strong><span>One of the clearest night skies on the planet. Core family memory.</span></div></li>
+          <li><div><strong>Flex Adventure Day</strong><span>Horseback, biking, salt flats, hot springs — or just the resort.</span></div></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mosaic">
+      <div class="mosaic-cell m-tall reveal">
+        <img data-fade src="../images/photos/valle_luna_2.jpg" alt="">
+        <div class="mosaic-label"><small>Iconic</small>Valle de la Luna</div>
+      </div>
+      <div class="mosaic-cell m-1x1 reveal reveal-d1">
+        <img data-fade src="../images/photos/stargazing_1.jpg" alt="">
+        <div class="mosaic-label"><small>Night Sky</small>Atacama Stars</div>
+      </div>
+      <div class="mosaic-cell m-1x1 reveal reveal-d2">
+        <img data-fade src="../images/photos/flamingo_1.jpg" alt="">
+        <div class="mosaic-label"><small>Lagoons</small>Andean Flamingos</div>
+      </div>
+      <div class="mosaic-cell m-1x1 reveal reveal-d3">
+        <img data-fade src="../images/photos/geysers_1.jpg" alt="">
+        <div class="mosaic-label"><small>Pre-Dawn</small>El Tatio Geysers</div>
+      </div>
+      <div class="mosaic-cell m-1x1 reveal reveal-d4">
+        <img data-fade src="../images/photos/salt_flats_1.jpg" alt="">
+        <div class="mosaic-label"><small>White Earth</small>Salar de Atacama</div>
+      </div>
+      <div class="mosaic-cell m-wide reveal reveal-d5">
+        <img data-fade src="../images/photos/atacama_4.jpg" alt="">
+        <div class="mosaic-label"><small>Wilderness</small>Desert Roads</div>
+      </div>
+      <div class="mosaic-cell m-sml reveal reveal-d5">
+        <img data-fade src="../images/photos/stargazing_2.jpg" alt="">
+        <div class="mosaic-label"><small>Sky</small>Milky Way</div>
+      </div>
+      <div class="mosaic-cell m-sml reveal reveal-d5">
+        <img data-fade src="../images/photos/valle_luna_3.jpg" alt="">
+        <div class="mosaic-label"><small>Sunset</small>Moon Valley</div>
+      </div>
+      <div class="mosaic-cell m-sml reveal reveal-d5">
+        <img data-fade src="../images/photos/atacama_5.jpg" alt="">
+        <div class="mosaic-label"><small>Mars Earth</small>Atacama</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Why It Works</span>
+        <h2 class="display-lg">Genuinely <em class="gold-italic">Different.</em></h2>
+      </div>
+      <div class="family-grid">
+        <div class="family-card reveal">
+          <span class="family-card-icon">👨‍👩</span>
+          <h3 class="family-card-title">For Adults</h3>
+          <ul>
+            <li>Premium without being flashy</li>
+            <li>World-class wine + food scene</li>
+            <li>Surreal scenery at every stop</li>
+            <li>Minimal crowds, real exhale</li>
+          </ul>
+        </div>
+        <div class="family-card reveal reveal-d1">
+          <span class="family-card-icon">🧒</span>
+          <h3 class="family-card-title">For Kids</h3>
+          <ul>
+            <li>Mars-like Valle de la Luna</li>
+            <li>Telescopes &amp; world-class stars</li>
+            <li>Horseback &amp; salt-flat adventures</li>
+            <li>Flamingos and volcanoes</li>
+          </ul>
+        </div>
+        <div class="family-card reveal reveal-d2">
+          <span class="family-card-icon">✨</span>
+          <h3 class="family-card-title">For Everyone</h3>
+          <ul>
+            <li>Not "Europe but again"</li>
+            <li>City + wine + nature in one trip</li>
+            <li>Great pacing, never overpacked</li>
+            <li>Genuinely cinematic memories</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="verdict">
+    <img class="verdict-photo" data-fade src="../images/photos/valle_luna_1.jpg" alt="">
+    <p class="eyebrow reveal">The Verdict</p>
+    <h2 class="verdict-title reveal reveal-d1">The Most<em>Unique One.</em></h2>
+    <div class="verdict-tags reveal reveal-d2">
+      <span class="verdict-tag">Dramatic</span>
+      <span class="verdict-tag">Cinematic</span>
+      <span class="verdict-tag">Adventurous</span>
+      <span class="verdict-tag">Surreal</span>
+      <span class="verdict-tag">April 2027</span>
+    </div>
+    <a href="../index.html" class="verdict-cta reveal reveal-d3">← Back to All Trips</a>
+  </section>
+
+  <footer class="footer">
+    <strong>Nadler Family Adventures</strong> &nbsp;·&nbsp; Chile · April 2027
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
