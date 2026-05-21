@@ -1067,6 +1067,161 @@ em.gold-italic { font-style: italic; color: var(--gold); }
   border-color: var(--gold);
 }
 
+/* ============ Lightbox ============ */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(6, 8, 16, 0.96);
+  backdrop-filter: blur(24px) saturate(150%);
+  -webkit-backdrop-filter: blur(24px) saturate(150%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s var(--ease-out);
+}
+.lightbox.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.lightbox-img {
+  max-width: min(96vw, 1800px);
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.6);
+  border-radius: 6px;
+  transform: scale(0.92);
+  opacity: 0;
+  transition: transform 0.4s var(--ease-out), opacity 0.4s var(--ease-out);
+}
+.lightbox.open .lightbox-img {
+  transform: scale(1);
+  opacity: 1;
+}
+.lightbox-caption {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+  font-family: var(--font-display);
+  font-size: clamp(0.9rem, 1.5vw, 1.15rem);
+  font-style: italic;
+  color: var(--cream);
+  letter-spacing: 0.01em;
+  padding: 0.7rem 1.5rem;
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(212, 175, 55, 0.18);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 100px;
+  max-width: calc(100vw - 4rem);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.4s var(--ease-out) 0.15s, transform 0.4s var(--ease-out) 0.15s;
+}
+.lightbox-caption .caption-eyebrow {
+  font-family: var(--font-body);
+  font-style: normal;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-right: 0.5rem;
+}
+.lightbox.open .lightbox-caption {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+.lightbox-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid rgba(246, 241, 230, 0.18);
+  background: rgba(246, 241, 230, 0.05);
+  color: var(--cream);
+  font-size: 1.5rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s, border-color 0.2s;
+  font-family: var(--font-body);
+}
+.lightbox-close:hover {
+  background: rgba(212, 175, 55, 0.15);
+  border-color: var(--gold);
+  transform: rotate(90deg);
+}
+
+/* Zoom cursor on clickable images */
+img[data-fade]:not(.hero-photo):not(.verdict-photo):not(.trip-card-photo) {
+  cursor: zoom-in;
+}
+
+/* ============ Hotel card link variant ============ */
+a.hotel-body {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  transition: color 0.2s;
+}
+.hotel:has(a.hotel-body:hover) {
+  border-color: rgba(212, 175, 55, 0.35);
+  background: rgba(246, 241, 230, 0.05);
+}
+a.hotel-body:hover .hotel-name {
+  color: var(--gold);
+}
+.hotel-ext {
+  display: inline-block;
+  font-size: 0.75em;
+  margin-left: 0.4em;
+  color: var(--gold);
+  opacity: 0.7;
+  transition: opacity 0.2s, transform 0.2s;
+}
+a.hotel-body:hover .hotel-ext {
+  opacity: 1;
+  transform: translate(2px, -2px);
+}
+
+/* External link arrow inside bullets */
+.bullets a.ext-link {
+  color: inherit;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  transition: color 0.2s;
+}
+.bullets a.ext-link:hover {
+  color: var(--gold);
+}
+.bullets a.ext-link::after {
+  content: '↗';
+  font-size: 0.78em;
+  color: var(--gold);
+  opacity: 0.7;
+  transition: opacity 0.2s, transform 0.2s;
+}
+.bullets a.ext-link:hover::after {
+  opacity: 1;
+  transform: translate(2px, -2px);
+}
+
 /* ============ Responsive ============ */
 @media (max-width: 900px) {
   .chapter-grid, .chapter-reverse .chapter-grid {
