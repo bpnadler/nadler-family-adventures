@@ -170,9 +170,12 @@
     // Delegated click handler. Clicks may land on the image directly OR on a
     // gradient `::after` overlay whose target is the parent container — so we
     // also check well-known containers for an image inside.
-    const CONTAINER_SELECTOR = '.journey-card, .mosaic-cell, .chapter-image-wrap, .strip, .trip-card, .hotel-thumb';
+    // Excludes .trip-card so the landing page can still navigate to trip pages.
+    const CONTAINER_SELECTOR = '.journey-card, .mosaic-cell, .chapter-image-wrap, .strip, .hotel-thumb';
     document.addEventListener('click', (e) => {
       let img = e.target && e.target.closest && e.target.closest('img[data-fade]');
+      // If clicked on a trip-card image, let the card's onclick navigate.
+      if (img && img.closest('.trip-card')) return;
       if (!img) {
         const container = e.target && e.target.closest && e.target.closest(CONTAINER_SELECTOR);
         if (container) img = container.querySelector('img[data-fade]');
@@ -183,7 +186,7 @@
       e.preventDefault();
       e.stopPropagation();
       openLb(img);
-    }, true); // capture so we beat trip-card onclick
+    }, true);
 
     lbClose.addEventListener('click', closeLb);
     lb.addEventListener('click', (e) => { if (e.target === lb) closeLb(); });
