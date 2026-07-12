@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trip Archive — Nadler Family Adventures</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <nav class="site-nav" role="navigation">
+    <span class="nav-brand">Nadler Family <em>Adventures</em></span>
+    <a href="index.html" class="nav-back">Live Itinerary</a>
+  </nav>
+
+  <header class="hub-hero" role="banner">
+    <div class="hub-hero-bg" aria-hidden="true"></div>
+    <div class="hub-hero-content">
+      <div class="hub-badge">✦ Trip Archive ✦</div>
+      <h1 class="hub-title">The Trips<em>We Considered</em></h1>
+      <p class="hub-subtitle">For 2027 we chose <a href="index.html" style="color:var(--gold);text-decoration:underline;">Switzerland &amp; Italy</a>. These three were on the shortlist — all still worth doing someday.</p>
+    </div>
+  </header>
+
+  <section class="trips-section">
+    <div class="trips-section-header reveal">
+      <span class="eyebrow">The Shortlist</span>
+      <h2 class="display-lg" style="margin:1.5rem 0 1rem;">Future <em class="gold-italic">Adventures.</em></h2>
+      <p class="lead" style="max-width:520px;margin-inline:auto;">Click any trip to see the full proposal.</p>
+    </div>
+
+    <div class="trips-grid">
+
+      <article class="trip-card reveal" onclick="window.location.href='trips/scotland.html'" role="button" tabindex="0" aria-label="View Scotland & Northern Ireland trip">
+        <img class="trip-card-photo" data-fade src="images/photos/glencoe_1.jpg" alt="">
+        <div class="trip-card-content">
+          <p class="trip-card-region">Northern Ireland · Scotland</p>
+          <h2 class="trip-card-title">Scotland &amp; Northern Ireland</h2>
+          <p class="trip-card-tagline">A cinematic 10-night family adventure</p>
+          <div class="trip-card-meta">
+            <div class="trip-card-meta-item">
+              <span class="trip-card-meta-label">Stops</span>
+              <span class="trip-card-meta-value">Belfast → Highlands → Edinburgh</span>
+            </div>
+          </div>
+          <span class="trip-card-cta">Explore Trip →</span>
+        </div>
+      </article>
+
+      <article class="trip-card reveal reveal-d1" onclick="window.location.href='trips/chile.html'" role="button" tabindex="0" aria-label="View Chile trip">
+        <img class="trip-card-photo" data-fade src="images/photos/atacama_1.jpg" alt="">
+        <div class="trip-card-content">
+          <p class="trip-card-region">Chile · South America</p>
+          <h2 class="trip-card-title">Beneath Southern Skies</h2>
+          <p class="trip-card-tagline">Mars-like desert, world-class stargazing &amp; quiet wine country</p>
+          <div class="trip-card-meta">
+            <div class="trip-card-meta-item">
+              <span class="trip-card-meta-label">Stops</span>
+              <span class="trip-card-meta-value">Santiago → Wine Country → Atacama</span>
+            </div>
+          </div>
+          <span class="trip-card-cta">Explore Trip →</span>
+        </div>
+      </article>
+
+      <article class="trip-card reveal reveal-d2" onclick="window.location.href='trips/dubai-oman.html'" role="button" tabindex="0" aria-label="View Dubai & Oman trip">
+        <img class="trip-card-photo" data-fade src="images/photos/burj_1.jpg" alt="">
+        <div class="trip-card-content">
+          <p class="trip-card-region">Dubai · Oman</p>
+          <h2 class="trip-card-title">Skyline to Sand to Sea</h2>
+          <p class="trip-card-tagline">10 nights of luxury, adventure &amp; Arabian atmosphere</p>
+          <div class="trip-card-meta">
+            <div class="trip-card-meta-item">
+              <span class="trip-card-meta-label">Stops</span>
+              <span class="trip-card-meta-value">Dubai → Muscat → Jebel Akhdar → Zighy Bay</span>
+            </div>
+          </div>
+          <span class="trip-card-cta">Explore Trip →</span>
+        </div>
+      </article>
+
+    </div>
+
+    <div style="text-align:center;margin-top:3rem;">
+      <p class="reveal" style="color:var(--cream-muted);font-size:0.85rem;">The trip we picked →</p>
+      <a href="trips/alps-italy.html" class="archive-link reveal reveal-d1" style="margin-top:1rem;">
+        Read the original Switzerland &amp; Italy proposal <em>→</em>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <strong>Nadler Family Adventures</strong> &nbsp;·&nbsp; Archive of trips we considered for 2027
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

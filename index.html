@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nadler Family Adventures 2027</title>
+  <title>Nadler Family Adventures 2027 — Alps to Italian Lakes</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="css/styles.css">
@@ -12,114 +12,463 @@
 
   <nav class="site-nav" role="navigation">
     <span class="nav-brand">Nadler Family <em>Adventures</em></span>
+    <a href="archive.html" class="nav-back" style="border-color:rgba(246,241,230,0.12);">Archive</a>
   </nav>
 
-  <header class="hub-hero" role="banner">
-    <div class="hub-hero-bg" aria-hidden="true"></div>
-    <div class="hub-hero-content">
-      <div class="hub-badge">✦ Trip Proposals 2027 ✦</div>
-      <h1 class="hub-title">Our Next<em>Great Adventure</em></h1>
-      <p class="hub-subtitle">Four handpicked journeys. One unforgettable family trip ahead.</p>
-      <span class="hub-departure">✈ Departing April 2027 from Toronto</span>
+  <!-- HERO -->
+  <header class="hero trip-hero-live" role="banner">
+    <img class="hero-photo" data-fade src="images/photos/lauterbrunnen_1.jpg" alt="">
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-content">
+      <span class="confirmed-pill hero-animate">Trip Confirmed</span>
+      <p class="hero-eyebrow hero-animate">Switzerland &amp; Italy · April 2027</p>
+      <h1 class="hero-title hero-animate">Alps to<em>Italian Lakes</em></h1>
+      <p class="hero-subtitle hero-animate">Toronto → Zurich → Swiss Alps → Lake Como → Milan → Toronto. 10 nights, all by train, one unforgettable family trip.</p>
+      <div class="hero-meta hero-animate">
+        <div class="hero-meta-item"><span class="hero-meta-label">Depart</span><span class="hero-meta-value">Sat 24 Apr 2027</span></div>
+        <div class="hero-meta-item"><span class="hero-meta-label">Return</span><span class="hero-meta-value">Wed 5 May 2027</span></div>
+        <div class="hero-meta-item"><span class="hero-meta-label">Duration</span><span class="hero-meta-value">11 Days · 10 Nights</span></div>
+        <div class="hero-meta-item"><span class="hero-meta-label">Party</span><span class="hero-meta-value">4 travelers</span></div>
+      </div>
     </div>
+    <div class="hero-scroll-hint" aria-hidden="true"><span>Scroll</span></div>
   </header>
 
-  <section class="trips-section">
-    <div class="trips-section-header reveal">
-      <span class="eyebrow">Choose Your Adventure</span>
-      <h2 class="display-lg" style="margin:1.5rem 0 1rem;">Four Trips. <em class="gold-italic">One Family.</em></h2>
-      <p class="lead" style="max-width:520px;margin-inline:auto;">Each one would become a permanent family memory. Click any trip to see the full journey.</p>
+  <!-- COUNTDOWN -->
+  <section class="countdown-strip">
+    <div id="countdown-mount">
+      <span class="countdown-num" id="countdown-num">—</span>
+      <span class="countdown-label">Days Until Departure</span>
     </div>
+  </section>
 
-    <div class="trips-grid">
+  <!-- JOURNEY OVERVIEW -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">The Journey</span>
+        <h2 class="display-lg">Four Chapters. <em class="gold-italic">One Trip.</em></h2>
+        <p class="lead">North to south. Mountains to lakes to city. Perfectly paced, all trains, no backtracking.</p>
+      </div>
 
-      <article class="trip-card reveal" onclick="window.location.href='trips/scotland.html'" role="button" tabindex="0" aria-label="View Scotland & Northern Ireland trip">
-        <img class="trip-card-photo" data-fade src="images/photos/glencoe_1.jpg" alt="">
-        <div class="trip-card-content">
-          <p class="trip-card-region">Northern Ireland · Scotland</p>
-          <h2 class="trip-card-title">Scotland &amp; Northern Ireland</h2>
-          <p class="trip-card-tagline">A cinematic 10-night family adventure</p>
-          <div class="trip-card-meta">
-            <div class="trip-card-meta-item">
-              <span class="trip-card-meta-label">Dates</span>
-              <span class="trip-card-meta-value">Apr 24 – May 5</span>
-            </div>
-            <div class="trip-card-meta-item">
-              <span class="trip-card-meta-label">Stops</span>
-              <span class="trip-card-meta-value">Belfast → Highlands → Edinburgh</span>
+      <div class="journey">
+        <div class="journey-card reveal">
+          <img class="journey-photo" data-fade src="images/photos/zurich_1.jpg" alt="">
+          <div class="journey-text">
+            <span class="journey-day">Apr 25 – 27</span>
+            <div>
+              <p class="journey-place">Zurich</p>
+              <p class="journey-mood">Easy arrival</p>
+              <span class="journey-nights">2 nights</span>
             </div>
           </div>
-          <span class="trip-card-cta">Explore Trip →</span>
         </div>
-      </article>
-
-      <article class="trip-card reveal reveal-d1" onclick="window.location.href='trips/alps-italy.html'" role="button" tabindex="0" aria-label="View Switzerland & Italy trip">
-        <img class="trip-card-photo" data-fade src="images/photos/lauterbrunnen_1.jpg" alt="">
-        <div class="trip-card-content">
-          <p class="trip-card-region">Switzerland · Italy</p>
-          <h2 class="trip-card-title">Alps to Italian Lakes</h2>
-          <p class="trip-card-tagline">A 10-night journey through the heart of Europe</p>
-          <div class="trip-card-meta">
-            <div class="trip-card-meta-item">
-              <span class="trip-card-meta-label">Dates</span>
-              <span class="trip-card-meta-value">Apr 23 – May 4</span>
-            </div>
-            <div class="trip-card-meta-item">
-              <span class="trip-card-meta-label">Stops</span>
-              <span class="trip-card-meta-value">Zurich → Alps → Como → Milan</span>
+        <div class="journey-card reveal reveal-d1">
+          <img class="journey-photo" data-fade src="images/photos/lauterbrunnen_2.jpg" alt="">
+          <div class="journey-text">
+            <span class="journey-day">Apr 27 – 30</span>
+            <div>
+              <p class="journey-place">Swiss Alps</p>
+              <p class="journey-mood">Mountain wow factor</p>
+              <span class="journey-nights">3 nights</span>
             </div>
           </div>
-          <span class="trip-card-cta">Explore Trip →</span>
         </div>
-      </article>
-
-      <article class="trip-card reveal reveal-d2" onclick="window.location.href='trips/chile.html'" role="button" tabindex="0" aria-label="View Chile trip">
-        <img class="trip-card-photo" data-fade src="images/photos/atacama_1.jpg" alt="">
-        <div class="trip-card-content">
-          <p class="trip-card-region">Chile · South America</p>
-          <h2 class="trip-card-title">Beneath Southern Skies</h2>
-          <p class="trip-card-tagline">Mars-like desert, world-class stargazing &amp; quiet wine country</p>
-          <div class="trip-card-meta">
-            <div class="trip-card-meta-item">
-              <span class="trip-card-meta-label">Dates</span>
-              <span class="trip-card-meta-value">April 2027</span>
-            </div>
-            <div class="trip-card-meta-item">
-              <span class="trip-card-meta-label">Stops</span>
-              <span class="trip-card-meta-value">Santiago → Wine Country → Atacama</span>
+        <div class="journey-card reveal reveal-d2">
+          <img class="journey-photo" data-fade src="images/photos/como_1.jpg" alt="">
+          <div class="journey-text">
+            <span class="journey-day">Apr 30 – May 3</span>
+            <div>
+              <p class="journey-place">Lake Como</p>
+              <p class="journey-mood">Italian downtime</p>
+              <span class="journey-nights">3 nights</span>
             </div>
           </div>
-          <span class="trip-card-cta">Explore Trip →</span>
         </div>
-      </article>
-
-      <article class="trip-card reveal reveal-d3" onclick="window.location.href='trips/dubai-oman.html'" role="button" tabindex="0" aria-label="View Dubai & Oman trip">
-        <img class="trip-card-photo" data-fade src="images/photos/burj_1.jpg" alt="">
-        <div class="trip-card-content">
-          <p class="trip-card-region">Dubai · Oman</p>
-          <h2 class="trip-card-title">Skyline to Sand to Sea</h2>
-          <p class="trip-card-tagline">10 nights of luxury, adventure &amp; Arabian atmosphere</p>
-          <div class="trip-card-meta">
-            <div class="trip-card-meta-item">
-              <span class="trip-card-meta-label">Dates</span>
-              <span class="trip-card-meta-value">April 2027</span>
-            </div>
-            <div class="trip-card-meta-item">
-              <span class="trip-card-meta-label">Stops</span>
-              <span class="trip-card-meta-value">Dubai → Muscat → Jebel Akhdar → Zighy Bay</span>
+        <div class="journey-card reveal reveal-d3">
+          <img class="journey-photo" data-fade src="images/photos/milan_1.jpg" alt="">
+          <div class="journey-text">
+            <span class="journey-day">May 3 – 5</span>
+            <div>
+              <p class="journey-place">Milan</p>
+              <p class="journey-mood">Style &amp; energy</p>
+              <span class="journey-nights">2 nights</span>
             </div>
           </div>
-          <span class="trip-card-cta">Explore Trip →</span>
         </div>
-      </article>
+      </div>
+    </div>
+  </section>
 
+  <!-- CONFIRMED BOOKINGS -->
+  <section class="section section-alt" id="bookings">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Confirmed Bookings</span>
+        <h2 class="display-lg">Locked <em class="gold-italic">In.</em></h2>
+        <p class="lead">Every reservation, with the details. Updated as new pieces get booked.</p>
+      </div>
+
+      <div class="bookings">
+
+        <!-- FLIGHT 1: OUTBOUND -->
+        <article class="booking reveal">
+          <div class="booking-header">
+            <div class="booking-icon" aria-hidden="true">✈</div>
+            <div class="booking-heading">
+              <p class="booking-eyebrow">Flight 1 · Outbound</p>
+              <h3 class="booking-title">Toronto → Zurich</h3>
+            </div>
+            <span class="status-badge confirmed">Confirmed</span>
+          </div>
+          <div class="booking-body">
+            <div class="flight-route">
+              <div class="flight-city">
+                <span class="airport">YYZ</span>
+                <span class="time">20:25</span>
+                <span class="date">Sat 24 Apr 2027</span>
+                <span class="terminal">Toronto-Pearson · Terminal 1</span>
+              </div>
+              <div class="flight-line">
+                <span class="plane" aria-hidden="true">✈</span>
+                <span class="duration">7h 40m</span>
+              </div>
+              <div class="flight-city right">
+                <span class="airport">ZRH</span>
+                <span class="time">10:05 <span class="tz-shift">+1 day</span></span>
+                <span class="date">Sun 25 Apr 2027</span>
+                <span class="terminal">Zurich Airport</span>
+              </div>
+            </div>
+            <ul class="booking-details">
+              <li><strong>Flight</strong>AC880 · Air Canada</li>
+              <li><strong>Aircraft</strong>Boeing 777-200LR · Wi-Fi</li>
+              <li><strong>Cabin</strong>Premium Economy (A) · Standard Reward</li>
+              <li><strong>Meals</strong>Dinner + Breakfast</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- FLIGHT 2: RETURN -->
+        <article class="booking reveal reveal-d1">
+          <div class="booking-header">
+            <div class="booking-icon" aria-hidden="true">✈</div>
+            <div class="booking-heading">
+              <p class="booking-eyebrow">Flight 2 · Return</p>
+              <h3 class="booking-title">Milan → Toronto</h3>
+            </div>
+            <span class="status-badge confirmed">Confirmed</span>
+          </div>
+          <div class="booking-body">
+            <div class="flight-route">
+              <div class="flight-city">
+                <span class="airport">MXP</span>
+                <span class="time">12:20</span>
+                <span class="date">Wed 5 May 2027</span>
+                <span class="terminal">Milan Malpensa</span>
+              </div>
+              <div class="flight-line">
+                <span class="plane" aria-hidden="true">✈</span>
+                <span class="duration">Same-day</span>
+              </div>
+              <div class="flight-city right">
+                <span class="airport">YYZ</span>
+                <span class="time">18:08</span>
+                <span class="date">Wed 5 May 2027</span>
+                <span class="terminal">Toronto-Pearson</span>
+              </div>
+            </div>
+            <ul class="booking-details">
+              <li><strong>Cabin</strong>Business Class · Standard Reward</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STILL TO BOOK -->
+  <section class="section" id="to-book">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Still to Book</span>
+        <h2 class="display-lg">Next <em class="gold-italic">Up.</em></h2>
+        <p class="lead">Hotels, trains, and standout experiences to lock in.</p>
+      </div>
+
+      <div class="bookings">
+        <article class="booking reveal">
+          <div class="booking-header">
+            <div class="booking-icon" aria-hidden="true">🏨</div>
+            <div class="booking-heading">
+              <p class="booking-eyebrow">Zurich · 2 nights · Apr 25 – 27</p>
+              <h3 class="booking-title">Zurich hotel</h3>
+            </div>
+            <span class="status-badge todo">To book</span>
+          </div>
+          <div class="booking-body" style="padding-top:1rem;">
+            <p style="font-size:0.9rem;color:var(--cream-dim);">Frontrunners: Baur au Lac (luxury) · 25hours Langstrasse (teen cool).</p>
+          </div>
+        </article>
+
+        <article class="booking reveal reveal-d1">
+          <div class="booking-header">
+            <div class="booking-icon" aria-hidden="true">🏨</div>
+            <div class="booking-heading">
+              <p class="booking-eyebrow">Swiss Alps · 3 nights · Apr 27 – 30</p>
+              <h3 class="booking-title">Lauterbrunnen valley hotel</h3>
+            </div>
+            <span class="status-badge todo">To book</span>
+          </div>
+          <div class="booking-body" style="padding-top:1rem;">
+            <p style="font-size:0.9rem;color:var(--cream-dim);">Frontrunner: Hotel Silberhorn, Lauterbrunnen.</p>
+          </div>
+        </article>
+
+        <article class="booking reveal reveal-d2">
+          <div class="booking-header">
+            <div class="booking-icon" aria-hidden="true">🏨</div>
+            <div class="booking-heading">
+              <p class="booking-eyebrow">Lake Como · 3 nights · Apr 30 – May 3</p>
+              <h3 class="booking-title">Varenna hotel</h3>
+            </div>
+            <span class="status-badge todo">To book</span>
+          </div>
+          <div class="booking-body" style="padding-top:1rem;">
+            <p style="font-size:0.9rem;color:var(--cream-dim);">Frontrunner: Hotel Olivedo, right at the Varenna ferry.</p>
+          </div>
+        </article>
+
+        <article class="booking reveal reveal-d3">
+          <div class="booking-header">
+            <div class="booking-icon" aria-hidden="true">🏨</div>
+            <div class="booking-heading">
+              <p class="booking-eyebrow">Milan · 2 nights · May 3 – 5</p>
+              <h3 class="booking-title">Milan hotel</h3>
+            </div>
+            <span class="status-badge todo">To book</span>
+          </div>
+          <div class="booking-body" style="padding-top:1rem;">
+            <p style="font-size:0.9rem;color:var(--cream-dim);">Frontrunner: Room Mate Giulia, steps from the Duomo.</p>
+          </div>
+        </article>
+
+        <article class="booking reveal reveal-d4">
+          <div class="booking-header">
+            <div class="booking-icon" aria-hidden="true">🚆</div>
+            <div class="booking-heading">
+              <p class="booking-eyebrow">Trains · 3 legs</p>
+              <h3 class="booking-title">Rail passes &amp; segments</h3>
+            </div>
+            <span class="status-badge todo">To book</span>
+          </div>
+          <div class="booking-body" style="padding-top:1rem;">
+            <p style="font-size:0.9rem;color:var(--cream-dim);">Zurich → Lauterbrunnen · Lauterbrunnen → Varenna · Varenna → Milan. Swiss Travel Pass worth pricing.</p>
+          </div>
+        </article>
+
+        <article class="booking reveal reveal-d5">
+          <div class="booking-header">
+            <div class="booking-icon" aria-hidden="true">⛰</div>
+            <div class="booking-heading">
+              <p class="booking-eyebrow">Swiss Alps · Big-day experience</p>
+              <h3 class="booking-title">Jungfraujoch — Top of Europe</h3>
+            </div>
+            <span class="status-badge todo">To book</span>
+          </div>
+          <div class="booking-body" style="padding-top:1rem;">
+            <p style="font-size:0.9rem;color:var(--cream-dim);">Book early. Top-3 moment of the trip.</p>
+          </div>
+        </article>
+
+        <article class="booking reveal reveal-d5">
+          <div class="booking-header">
+            <div class="booking-icon" aria-hidden="true">🖼</div>
+            <div class="booking-heading">
+              <p class="booking-eyebrow">Milan · Optional</p>
+              <h3 class="booking-title">The Last Supper — timed entry</h3>
+            </div>
+            <span class="status-badge todo">To book</span>
+          </div>
+          <div class="booking-body" style="padding-top:1rem;">
+            <p style="font-size:0.9rem;color:var(--cream-dim);">6 – 8 weeks in advance. Tickets vanish fast.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="section section-alt" id="timeline">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Day by Day</span>
+        <h2 class="display-lg">The <em class="gold-italic">Plan.</em></h2>
+        <p class="lead">Rough day-by-day. Will fill in as details firm up.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-day reveal">
+          <div class="timeline-dot filled">0</div>
+          <div class="timeline-body">
+            <p class="timeline-date">Sat 24 Apr · Overnight flight</p>
+            <h3 class="timeline-heading">Toronto → Zurich</h3>
+            <ul class="timeline-items">
+              <li class="timeline-item"><span class="ti-icon">✈</span><span><span class="ti-label">AC880</span> · YYZ 20:25 → ZRH 10:05 <em style="color:var(--cream-muted);">(+1 day)</em></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-day reveal reveal-d1">
+          <div class="timeline-dot">1</div>
+          <div class="timeline-body">
+            <p class="timeline-date">Sun 25 Apr · Zurich</p>
+            <h3 class="timeline-heading">Land, ease in, walk the lake</h3>
+            <ul class="timeline-items">
+              <li class="timeline-item"><span class="ti-icon">🚕</span><span>Transfer to hotel · Old Town</span></li>
+              <li class="timeline-item"><span class="ti-icon">🍽</span><span>Early dinner · beat jet lag</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-day reveal reveal-d2">
+          <div class="timeline-dot">2</div>
+          <div class="timeline-body">
+            <p class="timeline-date">Mon 26 Apr · Zurich</p>
+            <h3 class="timeline-heading">Explore + optional Lucerne day trip</h3>
+            <ul class="timeline-items">
+              <li class="timeline-item"><span class="ti-icon">🚶</span><span>Bahnhofstrasse · Old Town wander</span></li>
+              <li class="timeline-item"><span class="ti-icon">🚆</span><span>Lucerne (1hr train) · Chapel Bridge</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-day reveal reveal-d3">
+          <div class="timeline-dot">3</div>
+          <div class="timeline-body">
+            <p class="timeline-date">Tue 27 Apr · Zurich → Lauterbrunnen</p>
+            <h3 class="timeline-heading">Scenic train to the Alps</h3>
+            <ul class="timeline-items">
+              <li class="timeline-item"><span class="ti-icon">🚆</span><span>Zurich → Lauterbrunnen (~2h 45m)</span></li>
+              <li class="timeline-item"><span class="ti-icon">💦</span><span>Valley walk · Staubbach Falls</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-day reveal reveal-d4">
+          <div class="timeline-dot">4</div>
+          <div class="timeline-body">
+            <p class="timeline-date">Wed 28 Apr · Alps</p>
+            <h3 class="timeline-heading">Jungfraujoch — Top of Europe</h3>
+            <ul class="timeline-items">
+              <li class="timeline-item"><span class="ti-icon">🚠</span><span>Cable cars &amp; cog train to 11,000 ft</span></li>
+              <li class="timeline-item"><span class="ti-icon">🧊</span><span>Glaciers, snow, big-day photos</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-day reveal reveal-d4">
+          <div class="timeline-dot">5</div>
+          <div class="timeline-body">
+            <p class="timeline-date">Thu 29 Apr · Alps</p>
+            <h3 class="timeline-heading">Flex day — hike, bike, or Mürren</h3>
+            <ul class="timeline-items">
+              <li class="timeline-item"><span class="ti-icon">🏔</span><span>Wengen, Mürren, or Trümmelbach Falls</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-day reveal reveal-d5">
+          <div class="timeline-dot">6</div>
+          <div class="timeline-body">
+            <p class="timeline-date">Fri 30 Apr · Lauterbrunnen → Varenna</p>
+            <h3 class="timeline-heading">Scenic rail travel day</h3>
+            <ul class="timeline-items">
+              <li class="timeline-item"><span class="ti-icon">🚆</span><span>Interlaken · Spiez · Milan · Varenna</span></li>
+              <li class="timeline-item"><span class="ti-icon">🍝</span><span>Lakeside dinner in Varenna</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-day reveal reveal-d5">
+          <div class="timeline-dot">7</div>
+          <div class="timeline-body">
+            <p class="timeline-date">Sat 1 May · Lake Como</p>
+            <h3 class="timeline-heading">Ferry to Bellagio</h3>
+            <ul class="timeline-items">
+              <li class="timeline-item"><span class="ti-icon">⛴</span><span>Bellagio · Menaggio · gelato</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-day reveal reveal-d5">
+          <div class="timeline-dot">8</div>
+          <div class="timeline-body">
+            <p class="timeline-date">Sun 2 May · Lake Como</p>
+            <h3 class="timeline-heading">Villa Balbianello · boat rental</h3>
+            <ul class="timeline-items">
+              <li class="timeline-item"><span class="ti-icon">🛥</span><span>Captain the lake for a few hours</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-day reveal reveal-d5">
+          <div class="timeline-dot">9</div>
+          <div class="timeline-body">
+            <p class="timeline-date">Mon 3 May · Varenna → Milan</p>
+            <h3 class="timeline-heading">Move to the city</h3>
+            <ul class="timeline-items">
+              <li class="timeline-item"><span class="ti-icon">🚆</span><span>Varenna → Milano Centrale (~1hr)</span></li>
+              <li class="timeline-item"><span class="ti-icon">🍽</span><span>Dinner in Brera or Navigli</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-day reveal reveal-d5">
+          <div class="timeline-dot">10</div>
+          <div class="timeline-body">
+            <p class="timeline-date">Tue 4 May · Milan</p>
+            <h3 class="timeline-heading">Duomo rooftop · Galleria</h3>
+            <ul class="timeline-items">
+              <li class="timeline-item"><span class="ti-icon">⛪</span><span>Rooftop walk among the spires</span></li>
+              <li class="timeline-item"><span class="ti-icon">🖼</span><span>Optional: The Last Supper</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-day reveal reveal-d5">
+          <div class="timeline-dot filled">11</div>
+          <div class="timeline-body">
+            <p class="timeline-date">Wed 5 May · Fly home</p>
+            <h3 class="timeline-heading">Milan → Toronto</h3>
+            <ul class="timeline-items">
+              <li class="timeline-item"><span class="ti-icon">✈</span><span>MXP 12:20 → YYZ 18:08 · Business</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARCHIVE LINK -->
+  <section class="section" style="padding-top:0;">
+    <div class="container" style="text-align:center;">
+      <p class="eyebrow reveal" style="display:inline-flex;justify-content:center;">The Other Options</p>
+      <h2 class="display-md reveal reveal-d1" style="margin:1rem auto 0.75rem;max-width:640px;">We chose Switzerland &amp; Italy — but three <em class="gold-italic">other trips</em> were on the table.</h2>
+      <p class="reveal reveal-d2" style="max-width:520px;margin:0 auto;color:var(--cream-dim);">Scotland &amp; Northern Ireland · Chile · Dubai &amp; Oman. All still worth doing someday.</p>
+      <a href="archive.html" class="archive-link reveal reveal-d3">View the archive <em>→</em></a>
     </div>
   </section>
 
   <footer class="footer">
-    <strong>Nadler Family Adventures</strong> &nbsp;·&nbsp; All trips departing Toronto, April 2027
+    <strong>Nadler Family Adventures</strong> &nbsp;·&nbsp; Switzerland &amp; Italy · Apr 24 – May 5, 2027
   </footer>
 
   <script src="js/main.js"></script>
+  <script>
+    // Days-until countdown
+    (function () {
+      var target = new Date('2027-04-24T20:25:00-04:00'); // YYZ departure
+      function tick() {
+        var now = new Date();
+        var days = Math.max(0, Math.ceil((target - now) / (1000 * 60 * 60 * 24)));
+        var el = document.getElementById('countdown-num');
+        if (el) el.textContent = days.toLocaleString();
+      }
+      tick();
+      setInterval(tick, 60 * 60 * 1000); // hourly is plenty
+    })();
+  </script>
 </body>
 </html>
