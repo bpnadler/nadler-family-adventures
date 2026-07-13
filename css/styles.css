@@ -1315,6 +1315,65 @@ em.gold-italic { font-style: italic; color: var(--gold); }
   color: var(--cream-muted);
 }
 
+/* Room sub-cards inside a booking (e.g. multi-room hotel) */
+.rooms {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(246,241,230,0.06);
+}
+.room {
+  padding: 0.9rem 1.1rem;
+  background: rgba(212,175,55,0.04);
+  border: 1px solid rgba(212,175,55,0.18);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.room-name {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.room-type {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--cream);
+  margin: 0.2rem 0 0.35rem;
+}
+.room-conf {
+  font-size: 0.72rem;
+  color: var(--cream-muted);
+  font-variant-numeric: tabular-nums;
+}
+.room-conf strong {
+  color: var(--cream-dim);
+  font-weight: 600;
+}
+
+.booking-subtitle {
+  font-size: 0.82rem;
+  color: var(--cream-muted);
+  margin-top: 0.15rem;
+}
+
+.booking-details a {
+  color: var(--cream);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(212,175,55,0.3);
+  transition: color 0.2s, border-color 0.2s;
+}
+.booking-details a:hover { color: var(--gold); border-color: var(--gold); }
+
 /* Timeline */
 .timeline {
   max-width: 900px;
