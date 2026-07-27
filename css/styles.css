@@ -1153,6 +1153,8 @@ em.gold-italic { font-style: italic; color: var(--gold); }
 .status-badge.pending::before { background: #e8c468; }
 .status-badge.todo { color: var(--cream-muted); background: rgba(246,241,230,0.05); border: 1px solid rgba(246,241,230,0.12); }
 .status-badge.todo::before { background: var(--cream-muted); }
+.status-badge.partial { color: #e0a060; background: rgba(224,160,96,0.1); border: 1px solid rgba(224,160,96,0.3); }
+.status-badge.partial::before { background: #e0a060; }
 
 /* Booking cards */
 .bookings {
@@ -1333,6 +1335,11 @@ em.gold-italic { font-style: italic; color: var(--gold); }
   flex-direction: column;
   gap: 0.2rem;
 }
+.room.pending {
+  background: rgba(224,160,96,0.04);
+  border: 1px dashed rgba(224,160,96,0.35);
+}
+.room.pending .room-name { color: #e0a060; }
 .room-name {
   font-size: 0.68rem;
   font-weight: 700;
