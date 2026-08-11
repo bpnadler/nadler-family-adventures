@@ -12,7 +12,11 @@
 
   <nav class="site-nav" role="navigation">
     <span class="nav-brand">Nadler Family <em>Adventures</em></span>
-    <a href="archive.html" class="nav-back" style="border-color:rgba(246,241,230,0.12);">Archive</a>
+    <div class="nav-tabs">
+      <a href="index.html" class="nav-tab active">Itinerary</a>
+      <a href="bookings.html" class="nav-tab">Bookings</a>
+      <a href="archive.html" class="nav-tab">Archive</a>
+    </div>
   </nav>
 
   <!-- HERO -->
@@ -100,424 +104,600 @@
     </div>
   </section>
 
-  <!-- CONFIRMED BOOKINGS -->
-  <section class="section section-alt" id="bookings">
+  <!-- WHERE WE'RE STAYING -->
+  <section class="section">
     <div class="container">
       <div class="section-header reveal">
-        <span class="eyebrow">Confirmed Bookings</span>
-        <h2 class="display-lg">Locked <em class="gold-italic">In.</em></h2>
-        <p class="lead">Every reservation, with the details. Updated as new pieces get booked.</p>
+        <span class="eyebrow">Where We're Staying</span>
+        <h2 class="display-lg">Four <em class="gold-italic">Homes</em> for Ten Nights.</h2>
+        <p class="lead">A design boutique, a mountain family-run, a lakeside penthouse, and a rooftop finale.</p>
       </div>
 
-      <div class="bookings">
-
-        <!-- FLIGHT 1: OUTBOUND -->
-        <article class="booking reveal">
-          <div class="booking-header">
-            <div class="booking-icon" aria-hidden="true">✈</div>
-            <div class="booking-heading">
-              <p class="booking-eyebrow">Flight 1 · Outbound</p>
-              <h3 class="booking-title">Toronto → Zurich</h3>
-            </div>
-            <span class="status-badge confirmed">Confirmed</span>
-          </div>
-          <div class="booking-body">
-            <div class="flight-route">
-              <div class="flight-city">
-                <span class="airport">YYZ</span>
-                <span class="time">20:25</span>
-                <span class="date">Sat 24 Apr 2027</span>
-                <span class="terminal">Toronto-Pearson · Terminal 1</span>
-              </div>
-              <div class="flight-line">
-                <span class="plane" aria-hidden="true">✈</span>
-                <span class="duration">7h 40m</span>
-              </div>
-              <div class="flight-city right">
-                <span class="airport">ZRH</span>
-                <span class="time">10:05 <span class="tz-shift">+1 day</span></span>
-                <span class="date">Sun 25 Apr 2027</span>
-                <span class="terminal">Zurich Airport</span>
-              </div>
-            </div>
-            <ul class="booking-details">
-              <li><strong>Flight</strong>AC880 · Air Canada</li>
-              <li><strong>Aircraft</strong>Boeing 777-200LR · Wi-Fi</li>
-              <li><strong>Cabin</strong>Business Class · all 4 travelers</li>
-              <li><strong>Meals</strong>Dinner + Breakfast</li>
-            </ul>
-          </div>
-        </article>
-
-        <!-- ZURICH HOTEL -->
-        <article class="booking reveal reveal-d1">
-          <div class="booking-header">
-            <div class="booking-icon" aria-hidden="true">🏨</div>
-            <div class="booking-heading">
-              <p class="booking-eyebrow">Zurich · 2 nights · Apr 25 – 27</p>
-              <h3 class="booking-title">Neues Schloss Privat Hotel</h3>
-              <p class="booking-subtitle">Autograph Collection · Marriott Bonvoy</p>
-            </div>
-            <span class="status-badge confirmed">Confirmed</span>
-          </div>
-          <div class="booking-body">
-            <ul class="booking-details">
-              <li><strong>Address</strong>Stockerstrasse 17, 8002 Zürich</li>
-              <li><strong>Phone</strong><a href="tel:+41442869400">+41 44 286 9400</a></li>
-              <li><strong>Website</strong><a href="https://www.marriott.com/en-us/hotels/zrhak-neues-schloss-privat-hotel-zurich-autograph-collection/overview/" target="_blank" rel="noopener noreferrer">marriott.com ↗</a></li>
-              <li><strong>Perks</strong>Platinum: breakfast + upgrade</li>
-            </ul>
-            <div class="rooms">
-              <div class="room">
-                <span class="room-name">👤 Parents</span>
-                <p class="room-type">King Suite</p>
-                <p class="room-conf"><strong>Conf.</strong> 70040516</p>
-              </div>
-              <div class="room">
-                <span class="room-name">👥 Teens</span>
-                <p class="room-type">Two Twin Beds</p>
-                <p class="room-conf"><strong>Conf.</strong> 70053549</p>
-              </div>
+      <div class="journey">
+        <a class="journey-card reveal" href="bookings.html" style="cursor:pointer;">
+          <img class="journey-photo" data-fade src="images/hotels/neues_schloss_zurich_3.jpg" alt="Neues Schloss">
+          <div class="journey-text">
+            <span class="journey-day">Apr 25 – 27 · Zurich</span>
+            <div>
+              <p class="journey-place">Neues Schloss</p>
+              <p class="journey-mood">Autograph Collection · Design boutique</p>
+              <span class="journey-nights">2 nights</span>
             </div>
           </div>
-        </article>
-
-        <!-- LAUTERBRUNNEN HOTEL -->
-        <article class="booking reveal reveal-d2">
-          <div class="booking-header">
-            <div class="booking-icon" aria-hidden="true">🏨</div>
-            <div class="booking-heading">
-              <p class="booking-eyebrow">Swiss Alps · 3 nights · Apr 27 – 30</p>
-              <h3 class="booking-title">Hotel Silberhorn</h3>
-              <p class="booking-subtitle">Lauterbrunnen · Family-run 3★ Superior</p>
-            </div>
-            <span class="status-badge confirmed">Confirmed</span>
-          </div>
-          <div class="booking-body">
-            <ul class="booking-details">
-              <li><strong>Address</strong>Bir Zuben 465, 3822 Lauterbrunnen</li>
-              <li><strong>Phone</strong><a href="tel:+41338562210">+41 33 856 2210</a></li>
-              <li><strong>Email</strong><a href="mailto:info@silberhorn.com">info@silberhorn.com</a></li>
-              <li><strong>Website</strong><a href="https://www.silberhorn.com/en/" target="_blank" rel="noopener noreferrer">silberhorn.com ↗</a></li>
-              <li><strong>Rate</strong>Best Available · Non-refundable</li>
-              <li><strong>City Tax</strong>CHF 3.50/adult · 1.75/child per night (paid at hotel)</li>
-            </ul>
-            <div class="rooms">
-              <div class="room">
-                <span class="room-name">👤 Parents</span>
-                <p class="room-type">Jungfrau Spa Superior</p>
-                <p class="room-conf"><strong>Conf.</strong> 16313SG044437 · CHF 987</p>
-              </div>
-              <div class="room">
-                <span class="room-name">👥 Teens</span>
-                <p class="room-type">Valley View · Superior · H100</p>
-                <p class="room-conf"><strong>Conf.</strong> 16313SG044446 · CHF 1,002</p>
-              </div>
+        </a>
+        <a class="journey-card reveal reveal-d1" href="bookings.html" style="cursor:pointer;">
+          <img class="journey-photo" data-fade src="images/hotels/silberhorn.jpg" alt="Hotel Silberhorn">
+          <div class="journey-text">
+            <span class="journey-day">Apr 27 – 30 · Alps</span>
+            <div>
+              <p class="journey-place">Hotel Silberhorn</p>
+              <p class="journey-mood">Family-run · Lauterbrunnen valley</p>
+              <span class="journey-nights">3 nights</span>
             </div>
           </div>
-        </article>
-
-        <!-- BELLAGIO PENTHOUSE -->
-        <article class="booking reveal reveal-d3">
-          <div class="booking-header">
-            <div class="booking-icon" aria-hidden="true">🏛</div>
-            <div class="booking-heading">
-              <p class="booking-eyebrow">Bellagio · 3 nights · Apr 30 – May 3</p>
-              <h3 class="booking-title">Splendor Luxury Penthouse</h3>
-              <p class="booking-subtitle">Airbnb · Entire home · Hosted by Orazio</p>
-            </div>
-            <span class="status-badge confirmed">Confirmed</span>
-          </div>
-          <div class="booking-body">
-            <ul class="booking-details">
-              <li><strong>Address</strong>Salita Genazzini, 4, 22021 Bellagio CO</li>
-              <li><strong>Host</strong>Orazio · <a href="tel:+393317355850">+39 331 735 5850</a></li>
-              <li><strong>Check-in</strong>Fri Apr 30, after 3:00 PM</li>
-              <li><strong>Checkout</strong>Mon May 3, by 10:00 AM</li>
-              <li><strong>Guests</strong>4 adults</li>
-              <li><strong>Total</strong>$3,557.22 CAD</li>
-              <li><strong>Cancellation</strong>Free until 3 PM Apr 29</li>
-              <li><strong>Airbnb Ref</strong>HM4BPHCBNC</li>
-            </ul>
-          </div>
-        </article>
-
-        <!-- MILAN HOTEL -->
-        <article class="booking reveal reveal-d4">
-          <div class="booking-header">
-            <div class="booking-icon" aria-hidden="true">🏨</div>
-            <div class="booking-heading">
-              <p class="booking-eyebrow">Milan · 2 nights · May 3 – 5</p>
-              <h3 class="booking-title">STRAF Milan</h3>
-              <p class="booking-subtitle">Design Hotels · Marriott Bonvoy · Steps from the Duomo</p>
-            </div>
-            <span class="status-badge confirmed">Confirmed</span>
-          </div>
-          <div class="booking-body">
-            <ul class="booking-details">
-              <li><strong>Address</strong>Via San Raffaele 3, 20121 Milan</li>
-              <li><strong>Phone</strong><a href="tel:+390280508">+39 02 805081</a></li>
-              <li><strong>Website</strong><a href="https://www.marriott.com/en-us/hotels/mxpsr-straf-milan/overview/" target="_blank" rel="noopener noreferrer">marriott.com ↗</a></li>
-              <li><strong>Rate</strong>Flexible · Free cancel until 11:59 PM May 2</li>
-              <li><strong>Perks</strong>Platinum: breakfast + 1,000-pt welcome gift + upgrade</li>
-              <li><strong>Milan total</strong>3,216 EUR</li>
-            </ul>
-            <div class="rooms">
-              <div class="room">
-                <span class="room-name">👤 Parents · ✨ The WOW</span>
-                <p class="room-type">WOW Terrace Suite · King · Duomo view · Rooftop Terrace</p>
-                <p class="room-conf"><strong>Conf.</strong> 77460840 · 1,978 EUR</p>
-              </div>
-              <div class="room">
-                <span class="room-name">👥 Teens</span>
-                <p class="room-type">Superior Twin · 2 Twin Beds</p>
-                <p class="room-conf"><strong>Conf.</strong> 77456011 · 1,238 EUR</p>
-              </div>
+        </a>
+        <a class="journey-card reveal reveal-d2" href="bookings.html" style="cursor:pointer;">
+          <img class="journey-photo" data-fade src="images/hotels/bellagio_penthouse.jpg" alt="Splendor Penthouse Bellagio">
+          <div class="journey-text">
+            <span class="journey-day">Apr 30 – May 3 · Bellagio</span>
+            <div>
+              <p class="journey-place">Splendor Penthouse</p>
+              <p class="journey-mood">Entire Airbnb · lake views</p>
+              <span class="journey-nights">3 nights</span>
             </div>
           </div>
-        </article>
-
-        <!-- FLIGHT 2: RETURN -->
-        <article class="booking reveal reveal-d5">
-          <div class="booking-header">
-            <div class="booking-icon" aria-hidden="true">✈</div>
-            <div class="booking-heading">
-              <p class="booking-eyebrow">Flight 2 · Return</p>
-              <h3 class="booking-title">Milan → Toronto</h3>
+        </a>
+        <a class="journey-card reveal reveal-d3" href="bookings.html" style="cursor:pointer;">
+          <img class="journey-photo" data-fade src="images/hotels/straf_milan.jpg" alt="STRAF Milan">
+          <div class="journey-text">
+            <span class="journey-day">May 3 – 5 · Milan</span>
+            <div>
+              <p class="journey-place">STRAF Milan</p>
+              <p class="journey-mood">Design Hotels · Duomo rooftop 😎</p>
+              <span class="journey-nights">2 nights</span>
             </div>
-            <span class="status-badge confirmed">Confirmed</span>
           </div>
-          <div class="booking-body">
-            <div class="flight-route">
-              <div class="flight-city">
-                <span class="airport">MXP</span>
-                <span class="time">12:20</span>
-                <span class="date">Wed 5 May 2027</span>
-                <span class="terminal">Milan Malpensa</span>
-              </div>
-              <div class="flight-line">
-                <span class="plane" aria-hidden="true">✈</span>
-                <span class="duration">Same-day</span>
-              </div>
-              <div class="flight-city right">
-                <span class="airport">YYZ</span>
-                <span class="time">18:08</span>
-                <span class="date">Wed 5 May 2027</span>
-                <span class="terminal">Toronto-Pearson</span>
-              </div>
-            </div>
-            <ul class="booking-details">
-              <li><strong>Airline</strong>Air Canada</li>
-              <li><strong>Cabin</strong>Business Class · all 4 travelers</li>
-            </ul>
-          </div>
-        </article>
-
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- STILL TO BOOK -->
-  <section class="section" id="to-book">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="eyebrow">Still to Book</span>
-        <h2 class="display-lg">Next <em class="gold-italic">Up.</em></h2>
-        <p class="lead">Hotels, trains, and standout experiences to lock in.</p>
-      </div>
-
-      <div class="bookings">
-        <article class="booking reveal reveal-d4">
-          <div class="booking-header">
-            <div class="booking-icon" aria-hidden="true">🚆</div>
-            <div class="booking-heading">
-              <p class="booking-eyebrow">Trains · 3 legs</p>
-              <h3 class="booking-title">Rail passes &amp; segments</h3>
-            </div>
-            <span class="status-badge todo">To book</span>
-          </div>
-          <div class="booking-body" style="padding-top:1rem;">
-            <p style="font-size:0.9rem;color:var(--cream-dim);">Zurich → Lauterbrunnen · Lauterbrunnen → Varenna · Varenna → Milan. Swiss Travel Pass worth pricing.</p>
-          </div>
-        </article>
-
-        <article class="booking reveal reveal-d5">
-          <div class="booking-header">
-            <div class="booking-icon" aria-hidden="true">⛰</div>
-            <div class="booking-heading">
-              <p class="booking-eyebrow">Swiss Alps · Big-day experience</p>
-              <h3 class="booking-title">Jungfraujoch — Top of Europe</h3>
-            </div>
-            <span class="status-badge todo">To book</span>
-          </div>
-          <div class="booking-body" style="padding-top:1rem;">
-            <p style="font-size:0.9rem;color:var(--cream-dim);">Book early. Top-3 moment of the trip.</p>
-          </div>
-        </article>
-
-        <article class="booking reveal reveal-d5">
-          <div class="booking-header">
-            <div class="booking-icon" aria-hidden="true">🖼</div>
-            <div class="booking-heading">
-              <p class="booking-eyebrow">Milan · Optional</p>
-              <h3 class="booking-title">The Last Supper — timed entry</h3>
-            </div>
-            <span class="status-badge todo">To book</span>
-          </div>
-          <div class="booking-body" style="padding-top:1rem;">
-            <p style="font-size:0.9rem;color:var(--cream-dim);">6 – 8 weeks in advance. Tickets vanish fast.</p>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- TIMELINE -->
-  <section class="section section-alt" id="timeline">
+  <!-- DAY BY DAY -->
+  <section class="section section-alt" id="itinerary">
     <div class="container">
       <div class="section-header reveal">
         <span class="eyebrow">Day by Day</span>
         <h2 class="display-lg">The <em class="gold-italic">Plan.</em></h2>
-        <p class="lead">Rough day-by-day. Will fill in as details firm up.</p>
+        <p class="lead">Every day of the trip — where you wake up, what to do, where to eat, where you sleep.</p>
       </div>
 
-      <div class="timeline">
-        <div class="timeline-day reveal">
-          <div class="timeline-dot filled">0</div>
-          <div class="timeline-body">
-            <p class="timeline-date">Sat 24 Apr · Overnight flight</p>
-            <h3 class="timeline-heading">Toronto → Zurich</h3>
-            <ul class="timeline-items">
-              <li class="timeline-item"><span class="ti-icon">✈</span><span><span class="ti-label">AC880</span> · YYZ 20:25 → ZRH 10:05 <em style="color:var(--cream-muted);">(+1 day)</em> · Business Class</span></li>
+      <div class="days-list">
+
+        <!-- DAY 0 -->
+        <article class="day-card reveal">
+          <header class="day-card-header">
+            <span class="day-card-num">Day 0</span>
+            <span class="day-card-date">Sat 24 Apr</span>
+            <span class="day-card-loc">Overnight → <em>Zurich</em></span>
+          </header>
+          <div class="day-card-body">
+            <div class="day-context">
+              <span class="ctx-icon">🌅</span>
+              <span class="ctx-label">Wake up in</span>
+              <span class="ctx-value">Toronto</span>
+            </div>
+            <ul class="day-events">
+              <li class="day-event confirmed">
+                <span class="ev-icon">✈</span>
+                <div><strong>AC880 · YYZ 20:25 → ZRH 10:05 +1</strong><br><span style="color:var(--cream-muted);font-size:0.82rem;">Business Class · Boeing 777-200LR · Wi-Fi · Dinner + breakfast</span></div>
+              </li>
             </ul>
+            <div class="day-context">
+              <span class="ctx-icon">🌙</span>
+              <span class="ctx-label">Sleep on</span>
+              <span class="ctx-value">The plane · try to sleep 👀</span>
+            </div>
           </div>
-        </div>
-        <div class="timeline-day reveal reveal-d1">
-          <div class="timeline-dot">1</div>
-          <div class="timeline-body">
-            <p class="timeline-date">Sun 25 Apr · Zurich</p>
-            <h3 class="timeline-heading">Land, ease in, walk the lake</h3>
-            <ul class="timeline-items">
-              <li class="timeline-item"><span class="ti-icon">🚕</span><span>Transfer to <span class="ti-label">Neues Schloss</span> · Stockerstrasse 17</span></li>
-              <li class="timeline-item"><span class="ti-icon">🍽</span><span>Early dinner · beat jet lag</span></li>
+        </article>
+
+        <!-- DAY 1 -->
+        <article class="day-card reveal reveal-d1">
+          <header class="day-card-header">
+            <span class="day-card-num">Day 1</span>
+            <span class="day-card-date">Sun 25 Apr</span>
+            <span class="day-card-loc">Zurich · <em>Arrival</em></span>
+          </header>
+          <div class="day-card-body">
+            <div class="day-context">
+              <span class="ctx-icon">🌅</span>
+              <span class="ctx-label">Wake up on</span>
+              <span class="ctx-value">Approach to Zurich</span>
+            </div>
+            <ul class="day-events">
+              <li class="day-event"><span class="ev-icon">✈</span><span>Land ZRH 10:05 · customs · train to city</span></li>
+              <li class="day-event checkin"><span class="ev-icon">🏨</span><span>Check in to <strong>Neues Schloss</strong> · Stockerstrasse 17</span></li>
+              <li class="day-event"><span class="ev-icon">🚶</span><span>Slow walk through Old Town · beat jet lag</span></li>
+              <li class="day-event"><span class="ev-icon">🍽</span><span>Early dinner near hotel</span></li>
             </ul>
+            <div class="day-context">
+              <span class="ctx-icon">🌙</span>
+              <span class="ctx-label">Sleep in</span>
+              <span class="ctx-value"><strong>Neues Schloss</strong> · Zurich</span>
+            </div>
           </div>
-        </div>
-        <div class="timeline-day reveal reveal-d2">
-          <div class="timeline-dot">2</div>
-          <div class="timeline-body">
-            <p class="timeline-date">Mon 26 Apr · Zurich</p>
-            <h3 class="timeline-heading">Explore + optional Lucerne day trip</h3>
-            <ul class="timeline-items">
-              <li class="timeline-item"><span class="ti-icon">🚶</span><span>Bahnhofstrasse · Old Town wander</span></li>
-              <li class="timeline-item"><span class="ti-icon">🚆</span><span>Lucerne (1hr train) · Chapel Bridge</span></li>
+          <div class="day-recs">
+            <div class="rec-group">
+              <h4>🍽 Eat</h4>
+              <ul>
+                <li><a href="https://www.kronenhalle.com/" target="_blank" rel="noopener">Kronenhalle<span class="rec-note">Classic Swiss institution · original art on the walls</span></a></li>
+                <li><a href="https://www.spruengli.ch/en" target="_blank" rel="noopener">Confiserie Sprüngli<span class="rec-note">Bahnhofstrasse legend · chocolates + café</span></a></li>
+                <li><a href="https://www.zeughauskeller.ch/en/" target="_blank" rel="noopener">Zeughauskeller<span class="rec-note">Historic arsenal · loud, fun, huge portions</span></a></li>
+                <li><a href="https://www.zunfthaus-zur-waag.ch/en/" target="_blank" rel="noopener">Zunfthaus zur Waag<span class="rec-note">Historic guild house · elegant Swiss</span></a></li>
+              </ul>
+            </div>
+            <div class="rec-group">
+              <h4>👀 Do</h4>
+              <ul>
+                <li><a href="https://www.zuerich.com/en/visit/zurich-old-town" target="_blank" rel="noopener">Old Town (Altstadt)<span class="rec-note">Niederdorf · Lindenhof hill</span></a></li>
+                <li><a href="https://www.zuerich.com/en/visit/lake-zurich" target="_blank" rel="noopener">Lake Zurich promenade<span class="rec-note">Sunset walk · easy first-day activity</span></a></li>
+                <li><a href="https://www.grossmuenster.ch/en" target="_blank" rel="noopener">Grossmünster<span class="rec-note">Climb the twin towers for the view</span></a></li>
+                <li><a href="https://www.fraumuenster.ch/en" target="_blank" rel="noopener">Fraumünster<span class="rec-note">Chagall stained glass windows</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- DAY 2 -->
+        <article class="day-card reveal reveal-d2">
+          <header class="day-card-header">
+            <span class="day-card-num">Day 2</span>
+            <span class="day-card-date">Mon 26 Apr</span>
+            <span class="day-card-loc">Zurich · <em>Explore</em></span>
+          </header>
+          <div class="day-card-body">
+            <div class="day-context">
+              <span class="ctx-icon">🌅</span>
+              <span class="ctx-label">Wake up in</span>
+              <span class="ctx-value"><strong>Neues Schloss</strong> · Zurich</span>
+            </div>
+            <ul class="day-events">
+              <li class="day-event"><span class="ev-icon">🥐</span><span>Breakfast at hotel (Bonvoy Platinum perk)</span></li>
+              <li class="day-event"><span class="ev-icon">🚶</span><span>Bahnhofstrasse + Old Town wander</span></li>
+              <li class="day-event"><span class="ev-icon">🚆</span><span>Optional: Lucerne day trip (~1hr train)</span></li>
+              <li class="day-event"><span class="ev-icon">🍽</span><span>Dinner in Old Town</span></li>
             </ul>
+            <div class="day-context">
+              <span class="ctx-icon">🌙</span>
+              <span class="ctx-label">Sleep in</span>
+              <span class="ctx-value"><strong>Neues Schloss</strong> · Zurich</span>
+            </div>
           </div>
-        </div>
-        <div class="timeline-day reveal reveal-d3">
-          <div class="timeline-dot">3</div>
-          <div class="timeline-body">
-            <p class="timeline-date">Tue 27 Apr · Zurich → Lauterbrunnen</p>
-            <h3 class="timeline-heading">Scenic train to the Alps</h3>
-            <ul class="timeline-items">
-              <li class="timeline-item"><span class="ti-icon">🚆</span><span>Zurich → Lauterbrunnen (~2h 45m)</span></li>
-              <li class="timeline-item"><span class="ti-icon">🏨</span><span>Check in to <span class="ti-label">Hotel Silberhorn</span></span></li>
-              <li class="timeline-item"><span class="ti-icon">💦</span><span>Valley walk · Staubbach Falls</span></li>
+          <div class="day-recs">
+            <div class="rec-group">
+              <h4>🍽 Eat</h4>
+              <ul>
+                <li><a href="https://baurenschaenke.ch/" target="_blank" rel="noopener">Bauernschänke<span class="rec-note">Cool wine bar · modern Swiss</span></a></li>
+                <li><a href="https://haus-hiltl.ch/en/" target="_blank" rel="noopener">Hiltl<span class="rec-note">World's oldest vegetarian restaurant (1898)</span></a></li>
+                <li><a href="https://www.frauel.ch/" target="_blank" rel="noopener">Fräulein Miller / Frauel<span class="rec-note">Modern brunch spot</span></a></li>
+                <li><a href="https://www.chapelbridge.ch/" target="_blank" rel="noopener">Lucerne: Wirtshaus Galliker<span class="rec-note">Classic Swiss if you day-trip</span></a></li>
+              </ul>
+            </div>
+            <div class="rec-group">
+              <h4>👀 Do</h4>
+              <ul>
+                <li><a href="https://www.kunsthaus.ch/en/" target="_blank" rel="noopener">Kunsthaus Zürich<span class="rec-note">Major art museum · Chagall, Munch, Giacometti</span></a></li>
+                <li><a href="https://www.uetliberg.ch/en" target="_blank" rel="noopener">Uetliberg<span class="rec-note">Zurich's mountain · 30 min by train, big views</span></a></li>
+                <li><a href="https://luzern.com/en/" target="_blank" rel="noopener">Lucerne day trip<span class="rec-note">Chapel Bridge · Lion Monument · lake views</span></a></li>
+                <li><a href="https://landesmuseum.ch/en" target="_blank" rel="noopener">Swiss National Museum<span class="rec-note">Next to main station · rainy-day plan</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- DAY 3 -->
+        <article class="day-card reveal reveal-d3">
+          <header class="day-card-header">
+            <span class="day-card-num">Day 3</span>
+            <span class="day-card-date">Tue 27 Apr</span>
+            <span class="day-card-loc">Zurich → <em>Lauterbrunnen</em></span>
+          </header>
+          <div class="day-card-body">
+            <div class="day-context">
+              <span class="ctx-icon">🌅</span>
+              <span class="ctx-label">Wake up in</span>
+              <span class="ctx-value"><strong>Neues Schloss</strong> · Zurich</span>
+            </div>
+            <ul class="day-events">
+              <li class="day-event checkout"><span class="ev-icon">🧳</span><span>Check out of <strong>Neues Schloss</strong></span></li>
+              <li class="day-event"><span class="ev-icon">🚆</span><span>Scenic train Zurich → Lauterbrunnen (~2h 45m via Bern)</span></li>
+              <li class="day-event checkin"><span class="ev-icon">🏨</span><span>Check in to <strong>Hotel Silberhorn</strong> · steps from the station</span></li>
+              <li class="day-event"><span class="ev-icon">💦</span><span>Valley walk · Staubbach Falls (5 min from hotel)</span></li>
+              <li class="day-event"><span class="ev-icon">🍽</span><span>Dinner in valley</span></li>
             </ul>
+            <div class="day-context">
+              <span class="ctx-icon">🌙</span>
+              <span class="ctx-label">Sleep in</span>
+              <span class="ctx-value"><strong>Hotel Silberhorn</strong> · Lauterbrunnen</span>
+            </div>
           </div>
-        </div>
-        <div class="timeline-day reveal reveal-d4">
-          <div class="timeline-dot">4</div>
-          <div class="timeline-body">
-            <p class="timeline-date">Wed 28 Apr · Alps</p>
-            <h3 class="timeline-heading">Jungfraujoch — Top of Europe</h3>
-            <ul class="timeline-items">
-              <li class="timeline-item"><span class="ti-icon">🚠</span><span>Cable cars &amp; cog train to 11,000 ft</span></li>
-              <li class="timeline-item"><span class="ti-icon">🧊</span><span>Glaciers, snow, big-day photos</span></li>
+          <div class="day-recs">
+            <div class="rec-group">
+              <h4>🍽 Eat</h4>
+              <ul>
+                <li><a href="https://www.silberhorn.com/en/restaurants/" target="_blank" rel="noopener">Silberhorn restaurant<span class="rec-note">In-hotel · reliable Swiss + Alpine</span></a></li>
+                <li><a href="https://hotelschuetzen.com/en/restaurant/" target="_blank" rel="noopener">Hotel Schützen<span class="rec-note">Cozy fondue &amp; raclette</span></a></li>
+                <li><a href="https://www.hoteloberland.ch/en/restaurant/" target="_blank" rel="noopener">Hotel Oberland<span class="rec-note">Village institution · classic Swiss</span></a></li>
+                <li><a href="https://www.airtime.ch/" target="_blank" rel="noopener">Airtime Café<span class="rec-note">Breakfast + coffee · casual</span></a></li>
+              </ul>
+            </div>
+            <div class="rec-group">
+              <h4>👀 Do</h4>
+              <ul>
+                <li><a href="https://www.myswitzerland.com/en-ca/experiences/staubbach-falls/" target="_blank" rel="noopener">Staubbach Falls<span class="rec-note">300m free-falling waterfall · 5 min walk from hotel</span></a></li>
+                <li><a href="https://www.truemmelbachfaelle.ch/en/" target="_blank" rel="noopener">Trümmelbach Falls<span class="rec-note">Glacier waterfalls inside the mountain</span></a></li>
+                <li><a href="https://www.lauterbrunnen.swiss/en" target="_blank" rel="noopener">Valley walk<span class="rec-note">72 waterfalls · flat, family-friendly</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- DAY 4 -->
+        <article class="day-card reveal reveal-d4">
+          <header class="day-card-header">
+            <span class="day-card-num">Day 4</span>
+            <span class="day-card-date">Wed 28 Apr</span>
+            <span class="day-card-loc">Alps · <em>Top of Europe</em></span>
+          </header>
+          <div class="day-card-body">
+            <div class="day-context">
+              <span class="ctx-icon">🌅</span>
+              <span class="ctx-label">Wake up in</span>
+              <span class="ctx-value"><strong>Hotel Silberhorn</strong> · Lauterbrunnen</span>
+            </div>
+            <ul class="day-events">
+              <li class="day-event"><span class="ev-icon">🚠</span><span>Cable cars &amp; cog train to Jungfraujoch (11,000 ft)</span></li>
+              <li class="day-event"><span class="ev-icon">🧊</span><span>Glaciers · Ice Palace · Sphinx Observatory</span></li>
+              <li class="day-event"><span class="ev-icon">📸</span><span>Big-day photos · lunch at altitude</span></li>
+              <li class="day-event"><span class="ev-icon">🍽</span><span>Casual dinner in valley</span></li>
             </ul>
+            <div class="day-context">
+              <span class="ctx-icon">🌙</span>
+              <span class="ctx-label">Sleep in</span>
+              <span class="ctx-value"><strong>Hotel Silberhorn</strong> · Lauterbrunnen</span>
+            </div>
           </div>
-        </div>
-        <div class="timeline-day reveal reveal-d4">
-          <div class="timeline-dot">5</div>
-          <div class="timeline-body">
-            <p class="timeline-date">Thu 29 Apr · Alps</p>
-            <h3 class="timeline-heading">Flex day — hike, bike, or Mürren</h3>
-            <ul class="timeline-items">
-              <li class="timeline-item"><span class="ti-icon">🏔</span><span>Wengen, Mürren, or Trümmelbach Falls</span></li>
+          <div class="day-recs">
+            <div class="rec-group">
+              <h4>🍽 Eat</h4>
+              <ul>
+                <li><a href="https://www.jungfrau.ch/en-gb/jungfraujoch-top-of-europe/culinary-delights/" target="_blank" rel="noopener">Bollywood @ Jungfraujoch<span class="rec-note">Indian food at 11,000 ft (yes, really)</span></a></li>
+                <li><a href="https://www.jungfrau.ch/en-gb/kleine-scheidegg/" target="_blank" rel="noopener">Kleine Scheidegg lunch<span class="rec-note">Mountain-station restaurants on the way up</span></a></li>
+                <li><a href="https://www.silberhorn.com/en/restaurants/" target="_blank" rel="noopener">Silberhorn restaurant<span class="rec-note">Dinner in-hotel after a big day</span></a></li>
+              </ul>
+            </div>
+            <div class="rec-group">
+              <h4>👀 Do</h4>
+              <ul>
+                <li><a href="https://www.jungfrau.ch/en-gb/jungfraujoch-top-of-europe/" target="_blank" rel="noopener">Jungfraujoch — Top of Europe<span class="rec-note">Book online in advance · time-slot ticket</span></a></li>
+                <li><a href="https://www.jungfrau.ch/en-gb/ice-palace/" target="_blank" rel="noopener">Ice Palace<span class="rec-note">Corridors carved into the glacier</span></a></li>
+                <li><a href="https://www.jungfrau.ch/en-gb/sphinx-observatory/" target="_blank" rel="noopener">Sphinx Observatory viewing terrace<span class="rec-note">Panoramic glacier views</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- DAY 5 -->
+        <article class="day-card reveal reveal-d4">
+          <header class="day-card-header">
+            <span class="day-card-num">Day 5</span>
+            <span class="day-card-date">Thu 29 Apr</span>
+            <span class="day-card-loc">Alps · <em>Flex Day</em></span>
+          </header>
+          <div class="day-card-body">
+            <div class="day-context">
+              <span class="ctx-icon">🌅</span>
+              <span class="ctx-label">Wake up in</span>
+              <span class="ctx-value"><strong>Hotel Silberhorn</strong> · Lauterbrunnen</span>
+            </div>
+            <ul class="day-events">
+              <li class="day-event"><span class="ev-icon">🥐</span><span>Slow breakfast · check the weather</span></li>
+              <li class="day-event"><span class="ev-icon">🏔</span><span>Pick one: Mürren + Schilthorn, Wengen, or Trümmelbach</span></li>
+              <li class="day-event"><span class="ev-icon">🥾</span><span>Or: easy hike from Grütschalp</span></li>
+              <li class="day-event"><span class="ev-icon">🍷</span><span>Aperitivo on hotel terrace</span></li>
             </ul>
+            <div class="day-context">
+              <span class="ctx-icon">🌙</span>
+              <span class="ctx-label">Sleep in</span>
+              <span class="ctx-value"><strong>Hotel Silberhorn</strong> · Lauterbrunnen</span>
+            </div>
           </div>
-        </div>
-        <div class="timeline-day reveal reveal-d5">
-          <div class="timeline-dot">6</div>
-          <div class="timeline-body">
-            <p class="timeline-date">Fri 30 Apr · Alps → Bellagio</p>
-            <h3 class="timeline-heading">Travel day · settle in to the penthouse</h3>
-            <ul class="timeline-items">
-              <li class="timeline-item"><span class="ti-icon">🚆</span><span>Interlaken · Spiez · Milan → Varenna train</span></li>
-              <li class="timeline-item"><span class="ti-icon">⛴</span><span>Ferry Varenna → Bellagio (~15 min)</span></li>
-              <li class="timeline-item"><span class="ti-icon">🏛</span><span>Check in to <span class="ti-label">Splendor Penthouse</span> · after 3pm</span></li>
-              <li class="timeline-item"><span class="ti-icon">🍝</span><span>Dinner on Piazza Mazzini</span></li>
+          <div class="day-recs">
+            <div class="rec-group">
+              <h4>🍽 Eat</h4>
+              <ul>
+                <li><a href="https://schilthorn.ch/en/piz-gloria/" target="_blank" rel="noopener">Piz Gloria (revolving)<span class="rec-note">The Bond restaurant at 2,970m · book ahead</span></a></li>
+                <li><a href="https://www.stagerlodge-muerren.ch/" target="_blank" rel="noopener">Stäger Stübli · Mürren<span class="rec-note">Cozy village restaurant</span></a></li>
+                <li><a href="https://www.hoteleiger.com/en/restaurant/" target="_blank" rel="noopener">Hotel Eiger · Mürren<span class="rec-note">Wide terrace, mountain views</span></a></li>
+              </ul>
+            </div>
+            <div class="rec-group">
+              <h4>👀 Do</h4>
+              <ul>
+                <li><a href="https://schilthorn.ch/en/" target="_blank" rel="noopener">Schilthorn / Piz Gloria<span class="rec-note">007 filming location · panoramic peak</span></a></li>
+                <li><a href="https://www.muerren.swiss/en" target="_blank" rel="noopener">Mürren village<span class="rec-note">Car-free cliff village · funicular up</span></a></li>
+                <li><a href="https://www.wengen.swiss/en" target="_blank" rel="noopener">Wengen village<span class="rec-note">Car-free plateau · postcard views</span></a></li>
+                <li><a href="https://www.jungfrau.ch/en-gb/grindelwald-first/" target="_blank" rel="noopener">Grindelwald First<span class="rec-note">Cliff walk · zipline · adrenaline</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- DAY 6 -->
+        <article class="day-card reveal reveal-d5">
+          <header class="day-card-header">
+            <span class="day-card-num">Day 6</span>
+            <span class="day-card-date">Fri 30 Apr</span>
+            <span class="day-card-loc">Alps → <em>Bellagio</em></span>
+          </header>
+          <div class="day-card-body">
+            <div class="day-context">
+              <span class="ctx-icon">🌅</span>
+              <span class="ctx-label">Wake up in</span>
+              <span class="ctx-value"><strong>Hotel Silberhorn</strong> · Lauterbrunnen</span>
+            </div>
+            <ul class="day-events">
+              <li class="day-event checkout"><span class="ev-icon">🧳</span><span>Check out of <strong>Silberhorn</strong></span></li>
+              <li class="day-event"><span class="ev-icon">🚆</span><span>Train Interlaken · Spiez · Milan → Varenna</span></li>
+              <li class="day-event"><span class="ev-icon">⛴</span><span>Short ferry Varenna → Bellagio (~15 min · pretty crossing)</span></li>
+              <li class="day-event checkin"><span class="ev-icon">🏛</span><span>Check in to <strong>Splendor Penthouse</strong> · after 3pm</span></li>
+              <li class="day-event"><span class="ev-icon">🍝</span><span>First-night dinner · Piazza Mazzini</span></li>
             </ul>
+            <div class="day-context">
+              <span class="ctx-icon">🌙</span>
+              <span class="ctx-label">Sleep in</span>
+              <span class="ctx-value"><strong>Splendor Penthouse</strong> · Bellagio</span>
+            </div>
           </div>
-        </div>
-        <div class="timeline-day reveal reveal-d5">
-          <div class="timeline-dot">7</div>
-          <div class="timeline-body">
-            <p class="timeline-date">Sat 1 May · Bellagio</p>
-            <h3 class="timeline-heading">Wander Bellagio</h3>
-            <ul class="timeline-items">
-              <li class="timeline-item"><span class="ti-icon">🚶</span><span>Piazza Mazzini · lakefront streets · gelato</span></li>
-              <li class="timeline-item"><span class="ti-icon">🌿</span><span>Villa Melzi gardens (walkable from penthouse)</span></li>
+          <div class="day-recs">
+            <div class="rec-group">
+              <h4>🍽 Eat</h4>
+              <ul>
+                <li><a href="https://www.bilacus.it/" target="_blank" rel="noopener">Bilacus<span class="rec-note">Family-run · terrace · classic Como cuisine</span></a></li>
+                <li><a href="https://www.ristorantesilviobellagio.com/" target="_blank" rel="noopener">Ristorante Silvio<span class="rec-note">Fresh lake fish · father-son fishermen</span></a></li>
+                <li><a href="https://www.trattoriasangiacomo.com/" target="_blank" rel="noopener">Trattoria San Giacomo<span class="rec-note">Old Bellagio · reliable, warm</span></a></li>
+                <li><a href="https://www.puntaspartivento.com/" target="_blank" rel="noopener">La Punta<span class="rec-note">At the tip of Punta Spartivento · views</span></a></li>
+              </ul>
+            </div>
+            <div class="rec-group">
+              <h4>👀 Do</h4>
+              <ul>
+                <li><a href="https://www.giardinidivillamelzi.it/" target="_blank" rel="noopener">Villa Melzi gardens<span class="rec-note">Walkable from penthouse · botanical park on lake</span></a></li>
+                <li><a href="https://www.bellagiolakecomo.com/en/" target="_blank" rel="noopener">Wander Bellagio<span class="rec-note">Salita Serbelloni · silk shops · gelato</span></a></li>
+                <li><a href="https://www.puntaspartivento.com/" target="_blank" rel="noopener">Punta Spartivento walk<span class="rec-note">Lakeside stroll to the tip · sunset</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- DAY 7 -->
+        <article class="day-card reveal reveal-d5">
+          <header class="day-card-header">
+            <span class="day-card-num">Day 7</span>
+            <span class="day-card-date">Sat 1 May</span>
+            <span class="day-card-loc">Bellagio · <em>Wander</em></span>
+          </header>
+          <div class="day-card-body">
+            <div class="day-context">
+              <span class="ctx-icon">🌅</span>
+              <span class="ctx-label">Wake up in</span>
+              <span class="ctx-value"><strong>Splendor Penthouse</strong> · Bellagio</span>
+            </div>
+            <ul class="day-events">
+              <li class="day-event"><span class="ev-icon">☕</span><span>Espresso in the piazza</span></li>
+              <li class="day-event"><span class="ev-icon">🌿</span><span>Villa Melzi gardens (walkable)</span></li>
+              <li class="day-event"><span class="ev-icon">🚶</span><span>Piazza Mazzini · lakefront · gelato</span></li>
+              <li class="day-event"><span class="ev-icon">🍷</span><span>Aperitivo terrace</span></li>
+              <li class="day-event"><span class="ev-icon">🍽</span><span>Long, slow Italian dinner</span></li>
             </ul>
+            <div class="day-context">
+              <span class="ctx-icon">🌙</span>
+              <span class="ctx-label">Sleep in</span>
+              <span class="ctx-value"><strong>Splendor Penthouse</strong> · Bellagio</span>
+            </div>
           </div>
-        </div>
-        <div class="timeline-day reveal reveal-d5">
-          <div class="timeline-dot">8</div>
-          <div class="timeline-body">
-            <p class="timeline-date">Sun 2 May · Bellagio</p>
-            <h3 class="timeline-heading">Flex day — Villa Balbianello or lazy day</h3>
-            <ul class="timeline-items">
-              <li class="timeline-item"><span class="ti-icon">🏛</span><span>Optional: Villa Balbianello (short ferry)</span></li>
-              <li class="timeline-item"><span class="ti-icon">🛥</span><span>Optional: private boat tour</span></li>
-              <li class="timeline-item"><span class="ti-icon">🍷</span><span>Slow dinner, penthouse terrace</span></li>
+          <div class="day-recs">
+            <div class="rec-group">
+              <h4>🍽 Eat</h4>
+              <ul>
+                <li><a href="https://www.terrazzabarchetta.com/" target="_blank" rel="noopener">Terrazza Barchetta<span class="rec-note">Rooftop terrace overlooking the lake</span></a></li>
+                <li><a href="https://www.hotelflorencebellagio.it/restaurant" target="_blank" rel="noopener">Hotel Florence terrace<span class="rec-note">Aperitivi on Piazza Mazzini</span></a></li>
+                <li><a href="https://www.gelateriadelborgobellagio.com/" target="_blank" rel="noopener">Gelateria del Borgo<span class="rec-note">Best gelato in town · locals go here</span></a></li>
+                <li><a href="https://www.barrossibellagio.com/" target="_blank" rel="noopener">Bar Rossi<span class="rec-note">Coffee, aperitivo, people-watch</span></a></li>
+              </ul>
+            </div>
+            <div class="rec-group">
+              <h4>👀 Do</h4>
+              <ul>
+                <li><a href="https://www.giardinidivillamelzi.it/" target="_blank" rel="noopener">Villa Melzi gardens<span class="rec-note">Botanical park on the lakeshore</span></a></li>
+                <li><a href="https://www.bellagiolakecomo.com/en/villa-serbelloni/" target="_blank" rel="noopener">Villa Serbelloni park (guided)<span class="rec-note">Book at Bellagio tourist office</span></a></li>
+                <li><a href="https://www.puntaspartivento.com/" target="_blank" rel="noopener">Punta Spartivento walk<span class="rec-note">30 min lakeside stroll</span></a></li>
+                <li><a href="https://www.silkbellagio.com/" target="_blank" rel="noopener">Bellagio silk shops<span class="rec-note">Como region silk · centuries-old craft</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- DAY 8 -->
+        <article class="day-card reveal reveal-d5">
+          <header class="day-card-header">
+            <span class="day-card-num">Day 8</span>
+            <span class="day-card-date">Sun 2 May</span>
+            <span class="day-card-loc">Bellagio · <em>Flex Day</em></span>
+          </header>
+          <div class="day-card-body">
+            <div class="day-context">
+              <span class="ctx-icon">🌅</span>
+              <span class="ctx-label">Wake up in</span>
+              <span class="ctx-value"><strong>Splendor Penthouse</strong> · Bellagio</span>
+            </div>
+            <ul class="day-events">
+              <li class="day-event"><span class="ev-icon">🥐</span><span>Lazy breakfast on the terrace</span></li>
+              <li class="day-event"><span class="ev-icon">🏛</span><span>Optional: Villa Balbianello (short ferry to Lenno)</span></li>
+              <li class="day-event"><span class="ev-icon">🛥</span><span>Or: private boat tour (Como taxi boats)</span></li>
+              <li class="day-event"><span class="ev-icon">🍷</span><span>Slow dinner on the penthouse terrace</span></li>
             </ul>
+            <div class="day-context">
+              <span class="ctx-icon">🌙</span>
+              <span class="ctx-label">Sleep in</span>
+              <span class="ctx-value"><strong>Splendor Penthouse</strong> · Bellagio</span>
+            </div>
           </div>
-        </div>
-        <div class="timeline-day reveal reveal-d5">
-          <div class="timeline-dot">9</div>
-          <div class="timeline-body">
-            <p class="timeline-date">Mon 3 May · Bellagio → Milan</p>
-            <h3 class="timeline-heading">Move to the city · check in to STRAF</h3>
-            <ul class="timeline-items">
-              <li class="timeline-item"><span class="ti-icon">⛴</span><span>Ferry Bellagio → Varenna (~15 min)</span></li>
-              <li class="timeline-item"><span class="ti-icon">🚆</span><span>Varenna → Milano Centrale (~1hr)</span></li>
-              <li class="timeline-item"><span class="ti-icon">🏨</span><span>Check in to <span class="ti-label">STRAF</span> · Via San Raffaele 3 (steps from Duomo)</span></li>
-              <li class="timeline-item"><span class="ti-icon">🍽</span><span>Dinner in Brera or Navigli</span></li>
+          <div class="day-recs">
+            <div class="rec-group">
+              <h4>🍽 Eat</h4>
+              <ul>
+                <li><a href="https://www.metropolebellagio.it/restaurant/" target="_blank" rel="noopener">Metropole lakefront terrace<span class="rec-note">Right at the ferry pier · long lunch</span></a></li>
+                <li><a href="https://www.ristorantesilviobellagio.com/" target="_blank" rel="noopener">Ristorante Silvio<span class="rec-note">Book for dinner · fresh-caught fish</span></a></li>
+                <li><a href="https://www.aperitivobar.it/" target="_blank" rel="noopener">Ittiturismo da Abate · Lezzeno<span class="rec-note">Family fishing lunch across the lake</span></a></li>
+              </ul>
+            </div>
+            <div class="rec-group">
+              <h4>👀 Do</h4>
+              <ul>
+                <li><a href="https://fondoambiente.it/luoghi/villa-del-balbianello" target="_blank" rel="noopener">Villa del Balbianello<span class="rec-note">Star Wars &amp; Bond location · book timed entry</span></a></li>
+                <li><a href="https://www.taxiboatvarenna.com/" target="_blank" rel="noopener">Private boat tour (Como Taxi Boats)<span class="rec-note">2-hour lake circuit · captained</span></a></li>
+                <li><a href="https://www.navigazionelaghi.it/en/" target="_blank" rel="noopener">Public ferry hop<span class="rec-note">Varenna, Menaggio, Villa Carlotta</span></a></li>
+                <li><a href="https://villamonastero.eu/en/" target="_blank" rel="noopener">Villa Monastero (Varenna)<span class="rec-note">Botanical gardens · reachable by ferry</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- DAY 9 -->
+        <article class="day-card reveal reveal-d5">
+          <header class="day-card-header">
+            <span class="day-card-num">Day 9</span>
+            <span class="day-card-date">Mon 3 May</span>
+            <span class="day-card-loc">Bellagio → <em>Milan</em></span>
+          </header>
+          <div class="day-card-body">
+            <div class="day-context">
+              <span class="ctx-icon">🌅</span>
+              <span class="ctx-label">Wake up in</span>
+              <span class="ctx-value"><strong>Splendor Penthouse</strong> · Bellagio</span>
+            </div>
+            <ul class="day-events">
+              <li class="day-event checkout"><span class="ev-icon">🧳</span><span>Check out of <strong>Splendor Penthouse</strong> · by 10:00 AM</span></li>
+              <li class="day-event"><span class="ev-icon">⛴</span><span>Ferry Bellagio → Varenna (~15 min)</span></li>
+              <li class="day-event"><span class="ev-icon">🚆</span><span>Train Varenna → Milano Centrale (~1hr)</span></li>
+              <li class="day-event checkin"><span class="ev-icon">🏨</span><span>Check in to <strong>STRAF</strong> · Via San Raffaele 3 · after 3pm</span></li>
+              <li class="day-event"><span class="ev-icon">🍽</span><span>Dinner in Brera or Navigli</span></li>
             </ul>
+            <div class="day-context">
+              <span class="ctx-icon">🌙</span>
+              <span class="ctx-label">Sleep in</span>
+              <span class="ctx-value"><strong>STRAF Milan</strong> · Duomo view rooftop 😎</span>
+            </div>
           </div>
-        </div>
-        <div class="timeline-day reveal reveal-d5">
-          <div class="timeline-dot">10</div>
-          <div class="timeline-body">
-            <p class="timeline-date">Tue 4 May · Milan</p>
-            <h3 class="timeline-heading">Duomo rooftop · Galleria</h3>
-            <ul class="timeline-items">
-              <li class="timeline-item"><span class="ti-icon">⛪</span><span>Rooftop walk among the spires</span></li>
-              <li class="timeline-item"><span class="ti-icon">🖼</span><span>Optional: The Last Supper</span></li>
+          <div class="day-recs">
+            <div class="rec-group">
+              <h4>🍽 Eat</h4>
+              <ul>
+                <li><a href="https://ratana.it/" target="_blank" rel="noopener">Ratanà<span class="rec-note">Michelin contemporary · book in advance</span></a></li>
+                <li><a href="https://www.trattoriamilanese.it/" target="_blank" rel="noopener">Trattoria Milanese<span class="rec-note">90-year-old classic · risotto milanese</span></a></li>
+                <li><a href="https://www.rovello18.it/" target="_blank" rel="noopener">Rovello 18<span class="rec-note">Brera trattoria · Milanese comfort food</span></a></li>
+                <li><a href="https://www.nerinodieci.it/en/" target="_blank" rel="noopener">Nerino Dieci Trattoria<span class="rec-note">Solid, low-key, always packed</span></a></li>
+              </ul>
+            </div>
+            <div class="rec-group">
+              <h4>👀 Do</h4>
+              <ul>
+                <li><a href="https://www.duomomilano.it/en/" target="_blank" rel="noopener">Duomo di Milano<span class="rec-note">STRAF is literally next door</span></a></li>
+                <li><a href="https://www.brera.milano/en/" target="_blank" rel="noopener">Brera district evening<span class="rec-note">Bohemian streets · aperitivo bars</span></a></li>
+                <li><a href="https://www.navigli.milano.it/" target="_blank" rel="noopener">Navigli canals<span class="rec-note">Aperitivo along the canals at sunset</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- DAY 10 -->
+        <article class="day-card reveal reveal-d5">
+          <header class="day-card-header">
+            <span class="day-card-num">Day 10</span>
+            <span class="day-card-date">Tue 4 May</span>
+            <span class="day-card-loc">Milan · <em>The Finale</em></span>
+          </header>
+          <div class="day-card-body">
+            <div class="day-context">
+              <span class="ctx-icon">🌅</span>
+              <span class="ctx-label">Wake up in</span>
+              <span class="ctx-value"><strong>STRAF Milan</strong> · sunrise from the rooftop</span>
+            </div>
+            <ul class="day-events">
+              <li class="day-event"><span class="ev-icon">🥐</span><span>Breakfast at STRAF (Platinum perk)</span></li>
+              <li class="day-event"><span class="ev-icon">⛪</span><span>Duomo · rooftop walk among the spires</span></li>
+              <li class="day-event"><span class="ev-icon">🛍</span><span>Galleria Vittorio Emanuele II</span></li>
+              <li class="day-event"><span class="ev-icon">🖼</span><span>Optional: The Last Supper (book weeks ahead)</span></li>
+              <li class="day-event"><span class="ev-icon">🍽</span><span>Final Italian dinner</span></li>
+              <li class="day-event"><span class="ev-icon">🌇</span><span>Sunset on the STRAF rooftop terrace</span></li>
             </ul>
+            <div class="day-context">
+              <span class="ctx-icon">🌙</span>
+              <span class="ctx-label">Sleep in</span>
+              <span class="ctx-value"><strong>STRAF Milan</strong></span>
+            </div>
           </div>
-        </div>
-        <div class="timeline-day reveal reveal-d5">
-          <div class="timeline-dot filled">11</div>
-          <div class="timeline-body">
-            <p class="timeline-date">Wed 5 May · Fly home</p>
-            <h3 class="timeline-heading">Milan → Toronto</h3>
-            <ul class="timeline-items">
-              <li class="timeline-item"><span class="ti-icon">✈</span><span>MXP 12:20 → YYZ 18:08 · Business Class</span></li>
+          <div class="day-recs">
+            <div class="rec-group">
+              <h4>🍽 Eat</h4>
+              <ul>
+                <li><a href="https://www.craccoportal.com/en/" target="_blank" rel="noopener">Cracco (in Galleria)<span class="rec-note">Michelin · book weeks ahead</span></a></li>
+                <li><a href="https://www.luini.it/" target="_blank" rel="noopener">Luini panzerotti<span class="rec-note">Iconic street food · around the corner from STRAF</span></a></li>
+                <li><a href="https://pasticceriamarchesi.com/en/" target="_blank" rel="noopener">Marchesi 1824 in Galleria<span class="rec-note">Historic patisserie · morning ritual</span></a></li>
+                <li><a href="https://camparino.com/en/" target="_blank" rel="noopener">Camparino in Galleria<span class="rec-note">Birthplace of the Campari cocktail (1867)</span></a></li>
+                <li><a href="https://www.barbasso.com/" target="_blank" rel="noopener">Bar Basso<span class="rec-note">Home of the Negroni Sbagliato</span></a></li>
+              </ul>
+            </div>
+            <div class="rec-group">
+              <h4>👀 Do</h4>
+              <ul>
+                <li><a href="https://www.duomomilano.it/en/infopage/rooftops/" target="_blank" rel="noopener">Duomo rooftop walk<span class="rec-note">Book online · elevator or stairs · essential</span></a></li>
+                <li><a href="https://cenacolovinciano.org/en/" target="_blank" rel="noopener">The Last Supper (Cenacolo)<span class="rec-note">6–8 weeks in advance · timed entry</span></a></li>
+                <li><a href="https://www.museodelnovecento.org/en/" target="_blank" rel="noopener">Museo del Novecento<span class="rec-note">20th c. Italian art · next to Duomo</span></a></li>
+                <li><a href="https://pinacotecabrera.org/en/" target="_blank" rel="noopener">Pinacoteca di Brera<span class="rec-note">Major art collection</span></a></li>
+                <li><a href="https://www.teatroallascala.org/en/index.html" target="_blank" rel="noopener">La Scala tour<span class="rec-note">Opera house + museum</span></a></li>
+                <li><a href="https://www.fondazioneprada.org/" target="_blank" rel="noopener">Fondazione Prada<span class="rec-note">Contemporary art in a distillery</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- DAY 11 -->
+        <article class="day-card reveal reveal-d5">
+          <header class="day-card-header">
+            <span class="day-card-num">Day 11</span>
+            <span class="day-card-date">Wed 5 May</span>
+            <span class="day-card-loc">Milan → <em>Toronto</em></span>
+          </header>
+          <div class="day-card-body">
+            <div class="day-context">
+              <span class="ctx-icon">🌅</span>
+              <span class="ctx-label">Wake up in</span>
+              <span class="ctx-value"><strong>STRAF Milan</strong></span>
+            </div>
+            <ul class="day-events">
+              <li class="day-event checkout"><span class="ev-icon">🧳</span><span>Check out of <strong>STRAF</strong> · by 11:00 AM</span></li>
+              <li class="day-event"><span class="ev-icon">🚕</span><span>Transfer to MXP (~50 min · book Malpensa Express)</span></li>
+              <li class="day-event confirmed"><span class="ev-icon">✈</span><div><strong>MXP 12:20 → YYZ 18:08</strong><br><span style="color:var(--cream-muted);font-size:0.82rem;">Business Class · Air Canada</span></div></li>
             </ul>
+            <div class="day-context">
+              <span class="ctx-icon">🌙</span>
+              <span class="ctx-label">Sleep in</span>
+              <span class="ctx-value">Toronto · home 🏡</span>
+            </div>
           </div>
-        </div>
+        </article>
+
       </div>
     </div>
   </section>
@@ -538,9 +718,8 @@
 
   <script src="js/main.js"></script>
   <script>
-    // Days-until countdown
     (function () {
-      var target = new Date('2027-04-24T20:25:00-04:00'); // YYZ departure
+      var target = new Date('2027-04-24T20:25:00-04:00');
       function tick() {
         var now = new Date();
         var days = Math.max(0, Math.ceil((target - now) / (1000 * 60 * 60 * 24)));
@@ -548,7 +727,7 @@
         if (el) el.textContent = days.toLocaleString();
       }
       tick();
-      setInterval(tick, 60 * 60 * 1000); // hourly is plenty
+      setInterval(tick, 60 * 60 * 1000);
     })();
   </script>
 </body>

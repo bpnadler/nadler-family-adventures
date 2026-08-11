@@ -176,6 +176,8 @@
       let img = e.target && e.target.closest && e.target.closest('img[data-fade]');
       // If clicked on a trip-card image, let the card's onclick navigate.
       if (img && img.closest('.trip-card')) return;
+      // If image is inside an <a href> (navigation link), let the link work.
+      if (img && img.closest('a[href]')) return;
       if (!img) {
         const container = e.target && e.target.closest && e.target.closest(CONTAINER_SELECTOR);
         if (container) img = container.querySelector('img[data-fade]');
