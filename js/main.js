@@ -62,6 +62,61 @@
     }
   } catch (err) { console.warn('[parallax]', err); }
 
+  // ===== Day Deck (tab-style day navigation) =====
+  try {
+    const pills = document.querySelectorAll('.day-nav-pill');
+    const panels = document.querySelectorAll('.day-panel');
+    const prevBtn = document.getElementById('day-prev');
+    const nextBtn = document.getElementById('day-next');
+    const currentEl = document.getElementById('day-current');
+    const navWrap = document.querySelector('.day-nav-wrap');
+
+    if (pills.length && panels.length) {
+      const total = pills.length;
+      let currentDay = 0;
+
+      function show(day) {
+        day = Math.max(0, Math.min(total - 1, day));
+        currentDay = day;
+        panels.forEach(function (p) {
+          p.classList.toggle('active', +p.dataset.day === day);
+        });
+        pills.forEach(function (pill) {
+          pill.classList.toggle('active', +pill.dataset.target === day);
+        });
+        const activePill = document.querySelector('.day-nav-pill.active');
+        if (activePill && activePill.scrollIntoView) {
+          activePill.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        }
+        if (currentEl && activePill) {
+          const num = activePill.querySelector('.day-nav-num');
+          const dt = activePill.querySelector('.day-nav-date');
+          if (num && dt) currentEl.textContent = num.textContent + ' · ' + dt.textContent;
+        }
+        if (prevBtn) prevBtn.disabled = day <= 0;
+        if (nextBtn) nextBtn.disabled = day >= total - 1;
+      }
+
+      pills.forEach(function (pill) {
+        pill.addEventListener('click', function () {
+          show(+pill.dataset.target);
+        });
+      });
+      if (prevBtn) prevBtn.addEventListener('click', function () { show(currentDay - 1); });
+      if (nextBtn) nextBtn.addEventListener('click', function () { show(currentDay + 1); });
+
+      // Keyboard arrows
+      document.addEventListener('keydown', function (e) {
+        if (e.target && ['INPUT', 'TEXTAREA', 'SELECT'].indexOf(e.target.tagName) !== -1) return;
+        if (!document.getElementById('itinerary')) return;
+        if (e.key === 'ArrowLeft') show(currentDay - 1);
+        if (e.key === 'ArrowRight') show(currentDay + 1);
+      });
+
+      show(0);
+    }
+  } catch (err) { console.warn('[day-deck]', err); }
+
   // ===== Lightbox =====
   try {
     // Don't double-install
